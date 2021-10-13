@@ -1,6 +1,6 @@
 ---
 name: 'User Stories: <Title>'
-about: Describe this issue template's purpose here.
+about: 'User Stories: <Title>'
 title: ''
 labels: ''
 assignees: steveforrest, Gwen-Bradbury, BXS-Archipelago, tloveday
