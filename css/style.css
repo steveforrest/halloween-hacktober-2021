@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro:wght@600&display=swap");
+
+:root {
+  /* dark shades of primary color*/
+  /* primary/main color */
+  --hlwn-pumpkin-1: hsl(26, 100%, 50%);
+  --hlwn-pumpkin-2: hsl(28, 100%, 50%);
+  --hlwn-pumpkin-3: hsl(31, 100%, 50%);
+  --hlwn-pumpkin-4: hsl(34, 100%, 50%);
+  /* Text Colour */
+  --hlwn-pumpkin-5: rgb(255, 183, 66);
+  /* Purple Backgrounds */
+  --hlwn-purple-1: hsl(271, 100%, 14%);
+  /* Main Background Color */
+  --hlwn-purple-2: hsl(271, 85%, 23%);
+  --hlwn-purple-3: hsl(270, 73%, 35%);
+  --hlwn-purple-4: hsl(272, 63%, 46%);
+  --hlwn-purple-5: hsl(273, 68%, 59%);
+
+  --hlwn-grey-7: hsl(211, 27%, 70%);
+  --hlwn-grey-8: hsl(210, 31%, 80%);
+  --hlwn-grey-9: hsl(212, 33%, 89%);
+  --hlwn-grey-10: hsl(210, 36%, 96%);
+  --hlwn-white: #fff;
+  --hlwn-red-dark: hsl(0, 98%, 50%);
+  --hlwn-red-light: hsl(0, 100%, 50%);
+  --hlwn-green-dark: hsl(125, 67%, 44%);
+  --hlwn-green-light: hsl(125, 71%, 66%);
+  --hlwn-black: #222;
+  --ff-primary: "Creepster", sans-serif;
+  --ff-secondary: "Source Sans Pro", sans-serif;
+  --transition: all 0.9s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px hsla(101, 90%, 49%, 0.2);
+  --green-shadow: 0 13.36px 8.896px hsla(93, 92%, 47%, 0.91), 0 -2px 1px #54ed0c;
+  --eyes-shadow: 2px 6.36px 8.896px hsla(98, 48%, 18%, 0.91),
+    0px -0px 11px hsl(96, 97%, 36%);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+body {
+  font-size: 1rem;
+  background-image: url(../img/halloweenhouse.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  background-color: var(--hlwn-purple-5);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.house1-body {
+  background-image: url(../img/house.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.house2-body {
+  background-image: url(../img/house2.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.house3-body {
+  background-image: url(../img/pumpkinhouse.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.house4-body {
+  background-image: url(../img/hauntedhouse5.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.game1-body {
+  background-image: url(../img/hauntedhouse1.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.game2-body {
+  background-image: url(../img/hauntedhouse2.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.game3-body {
+  background-image: url(../img/hauntedhouse3.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.game4-body {
+  background-image: url(../img/hauntedhouse4.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 0.25rem;
+  color: var(--hlwn-red-dark);
+  font-weight: bolder;
+  text-shadow: var(--green-shadow);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+nav {
+  background: var(--hlwn-purple-2);
+  background-image: linear-gradient(90deg, transparent 50%, #190b20 50%);
+  background-size: 52px;
+  box-shadow: inset 0 0 100px var(--hlwn-black);
+  padding: 1.25rem 1rem;
+  position: relative;
+}
+
+nav::before,
+nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+nav::before {
+  /* Red gradients for blood */
+  background: linear-gradient(var(--hlwn-red-light) 50%, transparent 90%),
+    radial-gradient(var(--hlwn-red-dark) 40%, transparent 10%),
+    radial-gradient(var(--hlwn-red-light) 11%, transparent 10%),
+    radial-gradient(var(--hlwn-red-dark) 23%, transparent 20%),
+    radial-gradient(var(--hlwn-red-light) 5%, transparent 15%);
+  background-size: 100% 100%, 100px 400px, 100px 300px, 103px 173px, 77px 200px;
+  background-position: 0 0, -97% -78%, 71% 0%, 7% 23%, -5% 49%;
+  /* Background blend for bleed effect */
+  mix-blend-mode: multiply;
+  /* Mouse ignore blood */
+  pointer-events: none;
+  /* Hide before hover transition */
+  opacity: 0;
+  transform: translateY(-100%);
+  /* Mouseout effect */
+  transition: opacity 2s linear, transform 1s 2s linear;
+  height: 100%;
+  top: 0;
+}
+nav:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s 0s, transform 5s 0s linear;
+}
+nav::after {
+  background-image: radial-gradient(#07050a 40%, transparent 41%),
+    radial-gradient(#07050a 40%, transparent 41%);
+  background-size: 104px 104px;
+  background-position: 0 0, 52px 0;
+  height: 104px;
+  bottom: -52px;
+  z-index: -1;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--hlwn-pumpkin-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: var(--hlwn-pumpkin-1);
+  transform: rotate(90deg);
+}
+
+.logo {
+  height: 30px;
+  color: var(--hlwn-pumpkin-5);
+  letter-spacing: 4.3px;
+  text-shadow: var(--green-shadow);
+  margin-top: 0;
+}
+
+.links a {
+  font-family: var(--ff-primary);
+  color: var(--hlwn-pumpkin-5);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+
+.links a:hover {
+  background: var(--hlwn-purple-1);
+  color: var(--hlwn-pumpkin-1);
+  padding-left: 1.5rem;
+  letter-spacing: 0.2em;
+}
+
+.social-icons {
+  display: none;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 10rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1170px;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.mid-hdr {
+  color: var(--hlwn-pumpkin-4);
+  font-size: 1.3rem;
+  letter-spacing: 1.8px;
+  text-shadow: var(--eyes-shadow);
+  text-align: center;
+  font-family: var(--ff-primary);
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pumpkin-hldr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pumpkin-img {
+  width: 25%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.pumpkin-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-2deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(2deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-2deg);
+  }
+}
+
+.gift-info h3 {
+  text-transform: uppercase;
+  color: var(--clr-primary-3);
+}
+.gift-info p {
+  color: var(--clr-grey-6);
+}
+.date {
+  color: var(--clr-grey-5);
+  font-size: 0.85rem;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+  }
+  .pumpkin-img {
+    margin-bottom: 0;
+  }
+}
+.gift-info p {
+  margin: 2rem 0;
+}
+.deadline {
+  display: flex;
+}
+.deadline-format {
+  color: var(--hlwn-red-dark);
+  text-shadow: var(--green-shadow);
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: var(--spacing);
+}
+
+.doll-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .links a {
+    padding: 0 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--hlwn-pumpkin-5);
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--hlwn-pumpkin-1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .deadline-format span {
+    letter-spacing: 2px;
+    font-size: 0.6rem;
+  }
+  .deadline h4:not(.expired) {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: var(--spacing);
+  }
+
+  .deadline-format {
+    color: var(--hlwn-red-dark);
+    text-shadow: var(--green-shadow);
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .sml-hdr {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
