@@ -1,5 +1,5 @@
-const square = document.querySelectorAll('.square')
-const mole = document.querySelectorAll('.vamp')
+const square = document.querySelectorAll('.whack-a-vamp-square')
+const vamp = document.querySelectorAll('.vamp')
 const timeLeft = document.querySelector('#time-left')
 let score = document.querySelector('#score')
 
@@ -38,14 +38,14 @@ square.forEach(id => {
     })
 })
 
-function moveMole() {
+function moveVamp() {
     // Set Timer id To null.
     let timerId = null
     // Set Timer Interval to 1000 Miliseconds.
     timerId = setInterval(randomSquare, 1000)
 }
 
-moveMole()
+moveVamp()
 
 let timerId = setInterval(countDown, 1000)
 function countDown() {
