@@ -562,7 +562,6 @@ button > img:hover{
   background-color: brown;
   border-radius: 10px;
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -571,7 +570,6 @@ button > img:hover{
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-
 }
 .modal-content {
   background-color: #f4f4f4;
@@ -583,21 +581,19 @@ button > img:hover{
   border: red 4px solid;
   border-radius: 10px;
   height: fit-content;
-
+}
 /* Whack-a-Vamp css - game 2 */
 .container { 
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .square {
   width: 200px;
   height: 200px;
   border-style: solid;
   border-color: #e69c2d;
 }
-
 .grid {
   display: flex;
   flex-flow: row wrap;
