@@ -562,7 +562,6 @@ button > img:hover{
   background-color: brown;
   border-radius: 10px;
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -584,21 +583,18 @@ button > img:hover{
   border-radius: 10px;
   height: fit-content;
 }
-
 /* Whack-a-Vamp CSS - game 2 */
 .whack-a-vamp-container { 
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .whack-a-vamp-square {
   width: 200px;
   height: 200px;
   border-style: solid;
   border-color: #e69c2d;
 }
-
 .whack-a-vamp-grid {
   display: flex;
   flex-flow: row wrap;
