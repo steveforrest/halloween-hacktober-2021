@@ -30,9 +30,72 @@
     </nav>
 
     <section class="section-center">
-      <article class="second-col"></article>
-    </section>
+      <h2 class="warning">Candy Skull's Game of Greed</h2>
 
+      <p class="candy-intro-txt">
+        While some are rich, Others are needy, <br />
+        Some are humble. others are greedy. <br />
+        Wicked candy waits, in a ghastly magic bowl, <br />
+        Guarded by Ghouls from a deep dark Hole. <br />
+        What is the perfect number, count with each breath, <br />
+        Too little, or too much, might just mean your death... <br />
+      </p>
+
+      <article class="candy-col">
+        <div class="candygame">
+          <p class="rules">
+            Mortal, you have two hands but one simple brain. Each of your hands
+            can grab up to 10 sweets if you are lucky, but the amount I allow
+            you to take is a secret.
+          </p>
+          <p>
+            The total amount of sweets you can play for with each grab is the
+            same as the answer to this puzzle. Can you work it out?
+          </p>
+
+          <h6 class="puzzle">
+            Puzzle : "It was my birthday yesterday. <br />
+            The day before yesterday, I was only 16 years old. <br />
+            If today is January 1st, how old will I be on my birthday next
+            year?"
+          </h6>
+
+          <div class="gravestone">
+            <p id="candy-el">Play below for Candy</p>
+
+            <p id="sum-el">So...</p>
+
+            <img
+              src="img/hands.png"
+              onclick="startGame()"
+              class="two-hand"
+              alt="start-game"
+            />
+            <img
+              src="img/one-hand.png"
+              onclick="newHandful()"
+              class="one-hand"
+              alt="play-again"
+            />
+          </div>
+
+          <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
+          <div class="btn-holder">
+            <button class="candy-game-btn" onclick="startGame()">
+              Start Game
+            </button>
+            <button class="candy-game-btn" onclick="newHandful()">
+              Another handful?
+            </button>
+          </div>
+          <small
+            >The answer to the Puzzle? 19. It will only happen if your birthday
+            is on December 31st</small
+          >
+        </div>
+      </article>
+    </section>
+    <script src="js/candyskull.js"></script>
     <script src="js/javascript.js"></script>
   </body>
 </html>

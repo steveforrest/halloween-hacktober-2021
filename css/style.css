@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro:wght@600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 :root {
   /* dark shades of primary color*/
   /* primary/main color */
@@ -130,7 +130,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: var(--hlwn-grey-8);
+  letter-spacing: 4px;
+  font-family: var(--ff-secondary);
 }
 
 h3 {
@@ -139,6 +142,17 @@ h3 {
 
 h4 {
   font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: var(--ff-secondary);
+  color: var(--hlwn-grey-8);
+  text-shadow: var(--light-shadow);
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
 }
 
 p {
@@ -173,7 +187,7 @@ p {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section-center {
@@ -394,17 +408,193 @@ article {
   }
 }
 
-.gift-info h3 {
+/* <<<<<<<<< Candy Game (Brian) >>>>>>>>>>*/
+
+.candygame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.candy-col {
+  background-color: rgb(54, 53, 53); /* Fallback color */
+  background-color: rgba(34, 33, 33, 0.6);
+}
+
+.warning {
+  margin-top: 0;
+  animation: spooky 3.5s linear infinite alternate;
+  text-shadow: 2px 12px 8px #01790b;
+}
+
+.candy-intro-txt {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2;
+  /* blur background */
+  background-color: rgb(54, 53, 53);
+  background-color: rgba(34, 33, 33, 0.5);
+  padding: 1rem;
+  border: 2px solid darkgrey;
+  box-shadow: var(--dark-shadow);
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  color: var(--hlwn-pumpkin-1);
+  animation: spooky 3.5s linear infinite alternate;
+  text-shadow: 2px 2px 14px #01790b;
   text-transform: uppercase;
-  color: var(--clr-primary-3);
+  letter-spacing: 2.5px;
 }
-.gift-info p {
-  color: var(--clr-grey-6);
+.candy-col p {
+  color: var(--hlwn-grey-8);
+  text-shadow: none;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-family: var(--ff-secondary);
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-shadow: 2px 2px black;
 }
-.date {
-  color: var(--clr-grey-5);
-  font-size: 0.85rem;
+
+.puzzle {
+  color: var(--hlwn-pumpkin-1);
+  padding: 10px;
+  margin-top: 1rem;
+  animation: spooky 3.5s linear infinite alternate;
+  text-shadow: 2px 12px 8px #01790b;
 }
+
+#message-el {
+  margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  color: var(--hlwn-pumpkin-1);
+  animation: spooky 3.5s linear infinite alternate;
+  text-shadow: 2px 2px 18px #25bb32;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@keyframes spooky {
+  0% {
+    text-shadow: 2px -2px 18px #25bb32;
+  }
+  10% {
+    text-shadow: -3px -1px 12px #25bb32;
+  }
+  30% {
+    text-shadow: -4px 3px 15px #25bb32;
+  }
+  50% {
+    text-shadow: 2px 1px 8px #25bb32;
+  }
+  70% {
+    text-shadow: -3px -2px 13px #25bb32;
+  }
+  90% {
+    text-shadow: -2px 1px 10px #25bb32;
+  }
+  100% {
+    text-shadow: 3px -2px 18px #25bb32;
+  }
+}
+
+.gravestone {
+  background-image: url(../img/candygrave2bgc.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 600px;
+  width: 100%;
+  padding: 1rem;
+}
+
+#candy-el {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: var(--hlwn-white);
+  text-shadow: 4px 4px 4px #7a027a, 2px 2px 2px #ec06ec, 0px 4px 4px #880288;
+  transition: 2s all ease;
+}
+
+#sum-el {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  color: var(--hlwn-white);
+  text-shadow: 4px 4px 4px #7a027a, 2px 2px 2px #ec06ec, 0px 4px 4px #880288;
+  transition: 2s all ease;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.candy-game-btn {
+  width: 10em;
+  padding: 6px 10px;
+  font-size: 1rem;
+  margin: 10px;
+  background-color: #999;
+  background-image: linear-gradient(180deg, #ccc, #999);
+  border-top: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  border-left: 4px solid #666;
+  border-bottom: 4px solid #666;
+  float: left;
+  margin: 3em;
+  text-decoration: none;
+  background: #b4b3b3;
+  box-shadow: 10px 10px 15px #4b494b, -10px -10px 15px #737173;
+  transition: box-shadow 0.8s, border-top 0.8s, border-right 0.8s;
+}
+
+.candy-game-btn:hover {
+  box-shadow: inset 10px 10px 20px #4b494b, inset -10px -10px 20px #737173;
+  border-top: 3px solid #666;
+  border-right: 3px solid #666;
+}
+
+.one-hand {
+  height: 150px;
+  width: 80px;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.two-hand {
+  height: 150px;
+  width: 130px;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+small {
+  color: grey;
+}
+
 @media screen and (min-width: 992px) {
   .section-center {
     display: grid;
@@ -415,41 +605,6 @@ article {
   .pumpkin-img {
     margin-bottom: 0;
   }
-}
-.gift-info p {
-  margin: 2rem 0;
-}
-.deadline {
-  display: flex;
-}
-.deadline-format {
-  color: var(--hlwn-red-dark);
-  text-shadow: var(--green-shadow);
-  margin-right: 1rem;
-  width: 5rem;
-  height: 5rem;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-.deadline-format span {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.85rem;
-}
-.deadline h4:not(.expired) {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-  letter-spacing: var(--spacing);
-}
-
-.doll-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 3rem;
 }
 
 @media screen and (min-width: 800px) {
