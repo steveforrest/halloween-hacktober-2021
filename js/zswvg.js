@@ -143,11 +143,20 @@ function showGameOverModal() {
     // get starting state of modal
     modalGameOver.style.display = "flex";
 }
+/** Show nextPageModal*/
+function showNextPageModal() {
+    //get modal element
+    const modalNextPage = document.getElementById("nextPageModal");
+    // get starting state of modal
+    modalNextPage.style.display = "flex";
+}
 /* check scores*/
 function checkScores() {
     const lost = document.getElementById('loss');
     const scored = document.getElementById('score');
-    if (lost.innerText >= 3 || scored.innerText >= 3) {
+    if (lost.innerText >= 3) {
         showGameOverModal();
+    }else if(scored.innerText >=3){
+        console.log("it works")
     }
 }
