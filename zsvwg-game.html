@@ -29,18 +29,52 @@
       </div>
     </nav>
 
-    <section class="">
-      <div id="container2">
-        <button onclick="decideWinner('Paper')" class="paper-btn iconButton"><i class="fas fa-hand-paper"></i></button>
-        <button onclick="decideWinner('Lizard')" class="lizard-btn iconButton"><i
-                class="fas fa-hand-lizard"></i></button>
-        <button onclick="decideWinner('Rock')" class="rock-btn iconButton"><i class="fas fa-hand-rock"></i></button>
-        <button onclick="decideWinner('Spock')" class="spock-btn iconButton"><i class="fas fa-hand-spock"></i></button>
-        <button onclick="decideWinner('Scissors')" class="scissor-btn iconButton"><i
-                class="fas fa-hand-scissors"></i></button>
+    <section>
+      <div id="zsvwg-flex">
+        <button class="wepon-buttons" onclick="decideWinner('stake')"><img src="img/stake.png" alt="Wooden stake wepon to beat Vampire and Werewolf" height="100px" width="100"></button>
+        <button class="wepon-buttons" onclick="decideWinner('bat')"><img src="img/bat.png" alt="baseball bat wepon to beat skeletons and zombies" height="100px" width="100"></button>
+        <button class="wepon-buttons" onclick="decideWinner('bullet')"><img src="img/bullet.png" alt="Silver Bullet wepon to beat Werewolf and zombies" height="100px" width="100"></button>
+        <button class="wepon-buttons" onclick="decideWinner('water')"><img src="img/water.png" alt="Holy Water wepon to beat Ghost and Vampir" height="100px" width="100"></button>
+        <button class="wepon-buttons" onclick="decideWinner('proton')"><img src="img/bat.png" alt="Proton Pack wepon to beat Ghost and Skeleton" height="100px" width="100"></button>
         </div>
     </section>
+    <section id="zsvwg-scores">
+      <p>Player: <span id="score"> 0</span></p>
+      <p>Computer: <span id="loss"> 0</span></p>
+  </section>
+    <section>
+      <p>
+        Game rules: 
+        baseball bat zombie and skeleton
+        silver bullet werewolf and zombie
+        wooden stake werewolf and vampire
+        holy water ghost and vampire
+        proton pack ghost and skeleton
+      </p>
+    </section>
+    
+    <!-- modal to show users choice computers choice and result -->
+    <section class="modal" id="resultsModal">
+      <div class="modal-content">
+          <div id="flex-game-result1">
+              <p>You chose <span id="user-chose">paper-btn</span></p>
+              <p>Computer chose <span id="computer-chose">rock-btn</span></p>
+          </div>
+          <div id="flex-game-result2">
+              <p>The game resulted in a <span id="game-result">you won</span></p>
+          </div>
+          <button class="gameButton" onclick="hideResult()">Game on!!</button>
+      </div>
+  </section>
+  <section class="modal" id="gameOverModal">
+      <div class="modal-content">
+          <div id="flex-game-over">
+              <p>GAME OVER</p>
+          </div>
+          <button class="gameButton" onclick="resetGame()">RESET GAME</button>
+      </div>
+  </section>
 
-    <script src="js/javascript.js"></script>
+    <script src="js/zswvg.js"></script>
   </body>
 </html>

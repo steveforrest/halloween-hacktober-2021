@@ -1,11 +1,11 @@
 /**
  * Generates a number between 1 and 5 and asigns it to a computer choice for the game
  */
- function generateComputerChoice() {
+function generateComputerChoice() {
 
-    let comChoice = Math.ceil(Math.random() * 5);
+let comChoice = Math.ceil(Math.random() * 5);
 
-    if (comChoice === 1) {
+if (comChoice === 1) {
         return "Zombie";
     } else if (comChoice === 2) {
         return "Skeleton";
@@ -14,7 +14,7 @@
     } else if (comChoice === 4) {
         return "Werewolf";
     } else if (comChoice === 5) {
-        return "Ghost ";
+        return "Ghost";
     } else {
         return "error";
     }
@@ -25,27 +25,28 @@
 function decideWinner(userChoice) {
     let comChoice = generateComputerChoice();
     let result;
+    console.log(userChoice)
     if (userChoice === comChoice) {
         result = 'Draw!';
         showResult();
     } else {
-        if (userChoice === "Rock" && (comChoice == "Scissors" || comChoice == "Lizard")) {
+        if (userChoice === 'bat' && (comChoice == "Zombie" || comChoice == "Skeleton")) {
             incrementScore();
             showResult();
             result = 'Win!';
-        } else if (userChoice === "Paper" && (comChoice == "Rock" || comChoice == "Spock")) {
+        } else if (userChoice === 'bullet' && (comChoice == "Werewolf" || comChoice == "Zombie")) {
             incrementScore();
             showResult();
             result = 'Win!';
-        } else if (userChoice === "Scissors" && (comChoice == "Paper" || comChoice == "Lizard")) {
+        } else if (userChoice === 'stake' && (comChoice == "Vampire" || comChoice == "Werewolf")) {
             incrementScore();
             showResult();
             result = 'Win!';
-        } else if (userChoice === "Lizard" && (comChoice == "Spock" || comChoice == "Paper")) {
+        } else if (userChoice === 'water' && (comChoice == "Ghost" || comChoice == "Vampire")) {
             incrementScore();
             showResult();
             result = 'Win!';
-        } else if (userChoice === "Spock" && (comChoice == "Scissors" || comChoice == "Rock")) {
+        } else if (userChoice === 'proton' && (comChoice == "Skeleton" || comChoice == "Ghost")) {
             incrementScore();
             showResult();
             result = 'Win!';
@@ -59,7 +60,7 @@ function decideWinner(userChoice) {
     gameResult(result);
     computerChose(comChoice);
     return result;
-}
+ }
 /**
  * gets current score from the DOM and increases it by one
  */
@@ -74,28 +75,8 @@ function incrementLoss() {
     let previousLoss = parseInt(document.getElementById("loss").innerText);
     document.getElementById("loss").innerText = ++previousLoss;
 }
-/**
- * to allow to show rules
- */
-function showRules() {
-    //get modal element
-    const modal = document.getElementById("rules-modal");
-    //get open modal button
-    //get close modal button
-    // get starting state of modal
-    modal.style.display = "flex";
-}
-/**
- * to allow to hide rules
- */
-function hideRules() {
-    //get modal element
-    const modal = document.getElementById("rules-modal");
-    //get open modal button
-    //get close modal button
-    // get starting state of modal
-    modal.style.display = "none";
-}
+
+
 /**
  * Create a modal that is called up when the 
  * decide winner function is called and states what you chose what computer chose and the game result
@@ -107,14 +88,15 @@ function showResult() {
     modal.style.display = "block";
     userChose();
 }
+
 function hideResult() {
     //get modal element
     const modal = document.getElementById("resultsModal");
     // get starting state of modal
     modal.style.display = "none";
     checkScores();
-
 }
+
 function userChose(whatUserChose) {
     const usersChoice = document.getElementById("user-chose");
     usersChoice.innerHTML = whatUserChose;
