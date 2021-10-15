@@ -588,6 +588,7 @@ button > img:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #e20e0e;
 }
 .whack-a-vamp-square {
   width: 200px;
@@ -605,13 +606,15 @@ button > img:hover{
 }
 
 .vamp {
-  background-image: url("img/vampire.png");
+  background-image: url("../img/vampire.png") !important;
   background-size: cover;
+  z-index: 1;
 }
 
 .hit {
-  background-image: url("img/coffin.png");
+  background-image: url("../img/coffin.png") !important;
   background-size: cover;
+  z-index: 1;
 }
 
 /* Find-the-Key CSS - game 4 
