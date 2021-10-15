@@ -38,7 +38,7 @@
         <button class="wepon-buttons" onclick="decideWinner('proton')"><img src="img/bat.png" alt="Proton Pack wepon to beat Ghost and Skeleton" height="100px" width="100"></button>
         </div>
     </section>
-    <section id="scores">
+    <section id="zsvwg-scores">
       <p>Player: <span id="score"> 0</span></p>
       <p>Computer: <span id="loss"> 0</span></p>
   </section>
@@ -52,6 +52,28 @@
         proton pack ghost and skeleton
       </p>
     </section>
+    
+    <!-- modal to show users choice computers choice and result -->
+    <section class="modal" id="resultsModal">
+      <div class="modal-content">
+          <div id="flex-game-result1">
+              <p>You chose <span id="user-chose">paper-btn</span></p>
+              <p>Computer chose <span id="computer-chose">rock-btn</span></p>
+          </div>
+          <div id="flex-game-result2">
+              <p>The game resulted in a <span id="game-result">you won</span></p>
+          </div>
+          <button class="gameButton" onclick="hideResult()">Game on!!</button>
+      </div>
+  </section>
+  <section class="modal" id="gameOverModal">
+      <div class="modal-content">
+          <div id="flex-game-over">
+              <p>GAME OVER</p>
+          </div>
+          <button class="gameButton" onclick="resetGame()">RESET GAME</button>
+      </div>
+  </section>
 
     <script src="js/zswvg.js"></script>
   </body>
