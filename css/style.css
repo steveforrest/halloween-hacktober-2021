@@ -583,4 +583,36 @@ button > img:hover{
   border: red 4px solid;
   border-radius: 10px;
   height: fit-content;
+
+/* Whack-a-Vamp css - game 2 */
+.container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: #e69c2d;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 100vh;
+}
+
+.mole {
+  background-image: url("images/mole.jpg");
+  background-size: cover;
+}
+
+.hit {
+  background-image: url("images/hit.jpg");
+  background-size: cover;
 }
