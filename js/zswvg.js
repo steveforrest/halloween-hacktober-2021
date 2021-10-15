@@ -85,7 +85,7 @@ function showResult() {
     //get modal element
     const modal = document.getElementById("resultsModal");
     // get starting state of modal
-    modal.style.display = "block";
+    modal.style.display = "flex";
     userChose();
 }
 
@@ -147,7 +147,7 @@ function showGameOverModal() {
 function checkScores() {
     const lost = document.getElementById('loss');
     const scored = document.getElementById('score');
-    if (lost.innerText >= 5 || scored.innerText >= 5) {
+    if (lost.innerText >= 3 || scored.innerText >= 3) {
         showGameOverModal();
     }
 }
