@@ -156,7 +156,7 @@ h6 {
 p {
   margin-bottom: 0.25rem;
   color: var(--hlwn-red-dark);
-  font-weight: bolder;
+  font-weight: 400;
   text-shadow: var(--green-shadow);
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -402,6 +402,20 @@ article {
   100% {
     transform: translate(1px, -2px) rotate(-2deg);
   }
+}
+
+#page-link {
+  display: none;
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+  
+}
+.continue-btn-img {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--hlwn-purple-5);
+  border-radius: 20px;
 }
 /* Video Styling - Brian */
 
@@ -668,7 +682,7 @@ article {
   border-left: 4px solid #666;
   border-bottom: 4px solid #666;
   float: left;
-  margin: 3em;
+  margin: .9rem 2rem;
   text-decoration: none;
   background: #b4b3b3;
   box-shadow: 10px 10px 15px #4b494b, -10px -10px 15px #737173;

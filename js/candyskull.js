@@ -28,7 +28,9 @@ function getRandomNumber() {
     
     return randomNumber
 }
-
+function displayHide() {
+    document.getElementById("page-link").style.display="flex";
+ }
 
 function renderGame () {       
      candiesEl.innerText = `in each hand,
@@ -45,7 +47,8 @@ function renderGame () {
         
     }else if (sum === 19) {
         message = "Your Soul is Saved, But your teeth will rot. Leave this place with what you've got"        
-        hasFullBag = true       
+        hasFullBag = true
+        displayHide()       
         }else {        
         message = "You're too greedy to be fair. Play again, if you dare."
         isAlive = false
