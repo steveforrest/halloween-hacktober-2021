@@ -853,12 +853,12 @@ button>img:hover {
   height: 100vh;
 }
 .vamp {
-  background-image: url("../img/vampire.png") !important;
+  background-image: url("../img/vampire.png");
   background-size: cover;
   z-index: 1;
 }
 .hit {
-  background-image: url("../img/coffin.png") !important;
+  background-image: url("../img/coffin.png");
   background-size: cover;
   z-index: 1;
 }
@@ -866,25 +866,24 @@ button>img:hover {
 /* Find key CSS - game 2 */
 .find-key-container { 
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   color: #e20e0e;
 }
 .find-key-square {
   width: 80px;
   height: 80px;
-  border-style: solid;
+  border-style: solid; */
   border-color: #e69c2d;
 }
 .find-key-grid {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-content: center;
+  align-content: end;
   width: 90%;
-  height: 100vh;
-  margine: 0 auto;
-}
+  height: 90vh;
+  }
 
 .center-grid{
   display: flex;
@@ -892,12 +891,7 @@ button>img:hover {
 
 }
 .key {
-  background-image: url("../img/key_part.png") !important;
-  background-size: cover;
-  z-index: 1;
-}
-.found {
-  background-image: url("../img/coffin.png") !important;
+  background-image: url("../img/key_part.png");
   background-size: cover;
   z-index: 1;
 }
