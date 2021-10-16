@@ -27,19 +27,19 @@ function getRandomNumber() {
 
 
 function renderGame () {
-    candiesEl.textContent = "You grabbed: "
+    candiesEl.textContent = " "
     for (let i = 0; i < candy.length; i++) {
         candiesEl.textContent += candy[i] + " "
     }
-    sumEl.textContent = "You have " + sum + " candies"
+    sumEl.textContent = "You now have " + sum + " candies."
     if (sum <= 18) {
         
         message ="Tricks And Treats. You can grab more sweets?"
         
     }else if (sum === 19) {
         message = "Your Soul is Saved, But your teeth will rot. Leave this place with what you've got"
-        hasFullBag = true
-    }else {
+        hasFullBag = true       
+        }else {
         message = "You're too greedy to be fair. Play again, if you dare."
         isAlive = false
     }

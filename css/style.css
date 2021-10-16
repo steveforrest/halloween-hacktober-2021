@@ -29,7 +29,7 @@
   --hlwn-black: #222;
   --ff-primary: "Creepster", sans-serif;
   --ff-secondary: "Source Sans Pro", sans-serif;
-  --transition: all 0.9s linear;
+  --transition: all .9s ease;
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -289,6 +289,7 @@ nav::after {
   letter-spacing: 4.3px;
   text-shadow: var(--green-shadow);
   margin-top: 0;
+  font-family: var(--ff-primary);
 }
 
 .links a {
@@ -309,9 +310,6 @@ nav::after {
   letter-spacing: 0.2em;
 }
 
-.social-icons {
-  display: none;
-}
 
 .links {
   height: 0;
@@ -407,6 +405,88 @@ article {
     transform: translate(1px, -2px) rotate(-2deg);
   }
 }
+/* Video Styling - Brian */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient( var(--hlwn-purple-5), var(--hlwn-black));
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: all 3s ease;
+  
+}
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
+}
+
+.preloader__item {
+  border-radius: 50%;
+  border: 8px solid var(--hlwn-purple-1)
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* switch button */
+
+.switch-btn {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: var(--radius);
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: var(--transition);
+}
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.65rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--hlwn-pumpkin-1);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--hlwn-purple-3);
+  border-radius: var(--radius);
+  margin: 0;
+  display: block;
+  transition: var(--transition);
+}
+.slide .switch {
+  left: 50%;
+}
+
+
+
+
+
 
 /* <<<<<<<<< Candy Game (Brian) >>>>>>>>>>*/
 
@@ -679,9 +759,7 @@ small {
     text-align: center;
   }
 }
-
 /* zsvwg game CSS */
-
 #zsvwg-flex {
       height: 60%;
       width: 80%;
@@ -690,7 +768,6 @@ small {
       align-items: end;
       margin: 0 auto;
 }
-
 .wepon-buttons{
   height: 20rem;
   width: 12rem;
@@ -698,12 +775,10 @@ small {
   border-radius: 5px;
   background-color: grey;
 }
-
 button > img:hover{
   height: 150px;
   width: 150px;
 }
-
 /*Score for player and computer*/
 #zsvwg-scores {
   display: flex;
@@ -717,21 +792,23 @@ button > img:hover{
   background-color: brown;
   border-radius: 10px;
 }
-.modal {
+.zsvwg-modal {
   display: none;
-  position: fixed;
   z-index: 1;
-  height: 100%;
+  height: 10%;
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.zsvwg-modal-content {
   background-color: #f4f4f4;
   margin: 20% auto;
   padding: 15px;
   width: 80%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
   justify-content: center;
   overflow: auto;
   border: red 4px solid;
@@ -743,6 +820,7 @@ button > img:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #e20e0e;
 }
 .whack-a-vamp-square {
   width: 200px;
@@ -758,15 +836,15 @@ button > img:hover{
   width: 618px;
   height: 100vh;
 }
-
 .vamp {
-  background-image: url("img/vampire.png");
+  background-image: url("../img/vampire.png") !important;
   background-size: cover;
+  z-index: 1;
 }
-
 .hit {
-  background-image: url("img/coffin.png");
+  background-image: url("../img/coffin.png") !important;
   background-size: cover;
+  z-index: 1;
 }
 
 /* Find-the-Key CSS - game 4 
