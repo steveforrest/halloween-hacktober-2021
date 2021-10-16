@@ -43,10 +43,8 @@
 
 body {
   font-size: 1rem;
-  background-image: url(../img/halloweenhouse.jpg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  
+ 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
   background-color: var(--hlwn-purple-5);
@@ -94,7 +92,7 @@ body {
   background-size: cover;
 }
 .game3-body {
-  background-image: url(../img/hauntedhouse3.jpg);
+ 
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -413,7 +411,7 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient( var(--hlwn-purple-5), var(--hlwn-black));
+  background: linear-gradient( var(--hlwn-purple-1), var(--hlwn-black));
   display: grid;
   justify-content: center;
   align-items: center;
@@ -441,7 +439,15 @@ article {
   object-fit: cover;
   z-index: -2;
 }
-
+.video-container-candy-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180%;
+  object-fit: cover;
+  z-index: -2;
+}
 /* switch button */
 
 .switch-btn {
@@ -528,7 +534,7 @@ article {
   letter-spacing: 2.5px;
 }
 .candy-col p {
-  color: var(--hlwn-grey-8);
+  color: var(--hlwn-grey-10);
   text-shadow: none;
   text-align: center;
   font-size: 0.9rem;
@@ -536,7 +542,7 @@ article {
   font-family: var(--ff-secondary);
   letter-spacing: 2px;
   font-weight: 300;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 
 .puzzle {
@@ -550,16 +556,27 @@ article {
 #message-el {
   margin: 0;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: var(--ff-primary);
-  font-weight: 700;
-  color: var(--hlwn-pumpkin-1);
+  font-weight: 500;
+  color: var(--hlwn-pumpkin-5);
   animation: spooky 3.5s linear infinite alternate;
   text-shadow: 2px 2px 18px #25bb32;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 3.5px;
   width: 100%;
   padding: 0 20px;
+  animation: text-fade-in 1s ease forwards;
+}
+
+@keyframes text-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes spooky {
@@ -601,6 +618,20 @@ article {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: var(--hlwn-white);
+  text-shadow: 4px 4px 4px #7a027a, 2px 2px 2px #ec06ec, 0px 4px 4px #880288;
+  
+}
+
+
+#candy-el2 {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   font-size: 1.5rem;
   font-weight: bolder;
   color: var(--hlwn-white);
@@ -613,9 +644,9 @@ article {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--hlwn-white);
-  text-shadow: 4px 4px 4px #7a027a, 2px 2px 2px #ec06ec, 0px 4px 4px #880288;
+  text-shadow: 4px 4px 4px #7a027a, 2px 2px 2px rgb(83, 69, 69), 0px 4px 4px #000;
   transition: 2s all ease;
 }
 
@@ -650,27 +681,7 @@ article {
   border-right: 3px solid #666;
 }
 
-.one-hand {
-  height: 150px;
-  width: 80px;
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  top: 67%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.two-hand {
-  height: 150px;
-  width: 130px;
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  top: 70%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-}
 small {
   color: grey;
 }

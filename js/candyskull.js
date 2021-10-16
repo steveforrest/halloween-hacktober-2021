@@ -7,9 +7,13 @@ let message = " "
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let candiesEl = document.querySelector("#candy-el")
+let candiesEl2 = document.querySelector("#candy-el2")
+let myCandy = 0
+
 
 
 function startGame() {
+    candiesEl2.innerText = " "
     isAlive = true
     let firstHand = getRandomNumber()
     let secondHand = getRandomNumber()
@@ -26,20 +30,23 @@ function getRandomNumber() {
 }
 
 
-function renderGame () {
-    candiesEl.textContent = " "
-    for (let i = 0; i < candy.length; i++) {
-        candiesEl.textContent += candy[i] + " "
-    }
-    sumEl.textContent = "You now have " + sum + " candies."
-    if (sum <= 18) {
-        
-        message ="Tricks And Treats. You can grab more sweets?"
+function renderGame () {       
+     candiesEl.innerText = `in each hand,
+     ${candy[0]} and ${candy[1]} candies `
+    // for (let i = 0; i < candy.length; i++) {
+    //     candiesEl.innerText += candy[i] + " "
+    // }
+    
+    sumEl.innerText = `Making ~${sum}~ in your bag. 
+    click "Grab More" if you dare`
+
+    if (sum <= 18) {        
+        message ="You can grab more sweets!"
         
     }else if (sum === 19) {
-        message = "Your Soul is Saved, But your teeth will rot. Leave this place with what you've got"
+        message = "Your Soul is Saved, But your teeth will rot. Leave this place with what you've got"        
         hasFullBag = true       
-        }else {
+        }else {        
         message = "You're too greedy to be fair. Play again, if you dare."
         isAlive = false
     }
@@ -49,12 +56,12 @@ function renderGame () {
 
 
 function newHandful() {
-    if (isAlive === true && hasFullBag === false) {
-    
+    if (isAlive === true && hasFullBag === false) {    
     let myCandy = getRandomNumber()
     sum += myCandy
     candy.push(myCandy)
-    console.log(candy)
+    candiesEl2.innerText = `you grabbed ${myCandy} more!`
+    
     renderGame()
 }
 }
