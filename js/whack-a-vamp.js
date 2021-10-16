@@ -47,17 +47,43 @@ function moveVamp() {
 
 moveVamp()
 
+/** Hide gameOverModal*/
+function hideGameOverModal() {
+    //get modal element
+    const modalGameOver = document.getElementById("gameOverModal");
+    modalGameOver.style.display = "none";
+}
+/** Show gameOverModal*/
+function showGameOverModal() {
+    //get modal element
+    const modalGameOver = document.getElementById("gameOverModal");
+    // get starting state of modal
+    modalGameOver.style.display = "flex";
+}
+// Resets the page to retry
+function reset() {
+    window.location.reload();
+}
+/** Show nextPageModal*/
+function showNextPageModal() {
+    //get modal element
+    const modalNextPage = document.getElementById("nextPageModal");
+    // get starting state of modal
+    modalNextPage.style.display = "flex";
+}
+
 let timerId = setInterval(countDown, 1000)
 function countDown() {
-    // When Timer Gets to 0, Notify User Game Over and Show Final Score.
+    // When Timer Gets to 0, Notify User Game Over
     if(currentTime === 0) {
         // Set timer to 0
         clearInterval(timerId)
         //Set score back to 0
         score=null
-        //If user presses ok (confirm=True) reload window.
-        if (confirm('GAME OVER! \nYour Final Score Is: ' + result + '\nPlay Again?')){
-            window.location.reload();
+        if (result <= 44) {
+            showGameOverModal()
+        }else if(result >=45){
+            showNextPageModal();
         }
         return;
     }else{
