@@ -873,8 +873,7 @@ button>img:hover {
 .find-key-square {
   width: 80px;
   height: 80px;
-  border-style: solid; */
-  border-color: #e69c2d;
+
 }
 .find-key-grid {
   display: flex;
