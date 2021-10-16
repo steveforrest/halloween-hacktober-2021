@@ -157,6 +157,6 @@ function checkScores() {
     if (lost.innerText >= 3) {
         showGameOverModal();
     }else if(scored.innerText >=3){
-        console.log("it works")
+        showNextPageModal();
     }
 }
