@@ -44,10 +44,8 @@
 body {
   font-size: 1rem;
   background-image: url(../img/halloweenhouse.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
@@ -59,73 +57,52 @@ body {
 
 .house1-body {
   background-image: url(../img/house.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
 
 .house2-body {
   background-image: url(../img/house2.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
 
 .house3-body {
   background-image: url(../img/pumpkinhouse.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
 .house4-body {
   background-image: url(../img/hauntedhouse5.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
 .game1-body {
   background-image: url(../img/hauntedhouse1.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
 .game2-body {
   background-image: url(../img/hauntedhouse2.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
 .game3-body {
   background-image: url(../img/hauntedhouse3.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
 .game4-body {
   background-image: url(../img/hauntedhouse4.jpg);
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
 
@@ -191,15 +168,12 @@ p {
   h1 {
     font-size: 4rem;
   }
-
   h2 {
     font-size: 2.5rem;
   }
-
   h3 {
     font-size: 1.75rem;
   }
-
   h4 {
     font-size: 0.8rem;
   }
@@ -274,13 +248,11 @@ nav::before {
   height: 100%;
   top: 0;
 }
-
 nav:hover::before {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 1s 0s, transform 5s 0s linear;
 }
-
 nav::after {
   background-image: radial-gradient(#07050a 40%, transparent 41%),
     radial-gradient(#07050a 40%, transparent 41%);
@@ -337,9 +309,6 @@ nav::after {
   letter-spacing: 0.2em;
 }
 
-.social-icons {
-  display: none;
-}
 
 .links {
   height: 0;
@@ -404,47 +373,109 @@ article {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
-
   10% {
     transform: translate(-1px, -2px) rotate(-2deg);
   }
-
   20% {
     transform: translate(-3px, 0px) rotate(2deg);
   }
-
   30% {
     transform: translate(3px, 2px) rotate(0deg);
   }
-
   40% {
     transform: translate(1px, -1px) rotate(1deg);
   }
-
   50% {
     transform: translate(-1px, 2px) rotate(-1deg);
   }
-
   60% {
     transform: translate(-3px, 1px) rotate(0deg);
   }
-
   70% {
     transform: translate(3px, 1px) rotate(-1deg);
   }
-
   80% {
     transform: translate(-1px, -1px) rotate(2deg);
   }
-
   90% {
     transform: translate(1px, 2px) rotate(0deg);
   }
-
   100% {
     transform: translate(1px, -2px) rotate(-2deg);
   }
 }
+/* Video Styling - Brian */
+
+/* header {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+} */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+h1 {
+  color: var(--clr-white);
+}
+/* switch button */
+
+.switch-btn {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: var(--radius);
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: var(--transition);
+}
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  margin: 0;
+  display: block;
+  transition: var(--transition);
+}
+.slide .switch {
+  left: 50%;
+}
+/* header after - */
+/* this is to make video a little darker for headline text stand-out */
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+
 
 /* <<<<<<<<< Candy Game (Brian) >>>>>>>>>>*/
 
@@ -514,55 +545,12 @@ article {
   color: var(--hlwn-pumpkin-1);
   animation: spooky 3.5s linear infinite alternate;
   text-shadow: 2px 2px 18px #25bb32;
-
-  .gift-info p {
-  color: var(--clr-grey-6);
-}
-
-.date {
-  color: var(--clr-grey-5);
-  font-size: 0.85rem;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    display: grid;
-    place-items: center;
-    gap: 3rem;
-    width: 95vw;
-  }
-
-  .pumpkin-img {
-    margin-bottom: 0;
-  }
-}
-
-.gift-info p {
-  margin: 2rem 0;
-}
-
-.deadline {
-  display: flex;
-}
-
-.deadline-format {
-  color: var(--hlwn-red-dark);
-  text-shadow: var(--green-shadow);
-  margin-right: 1rem;
-  width: 5rem;
-  height: 5rem;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-
-.deadline-format span {
-  display: block;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   width: 100%;
   padding: 0 20px;
 }
+
 @keyframes spooky {
   0% {
     text-shadow: 2px -2px 18px #25bb32;
@@ -594,11 +582,6 @@ article {
   height: 600px;
   width: 100%;
   padding: 1rem;
-}
- .deadline h4:not(.expired) {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-  letter-spacing: var(--spacing);
 }
 
 #candy-el {
@@ -702,15 +685,12 @@ small {
     justify-content: space-between;
     padding: 1rem;
   }
-
   .nav-header {
     padding: 0;
   }
-
   .nav-toggle {
     display: none;
   }
-
   .links {
     height: auto;
     display: flex;
@@ -721,22 +701,18 @@ small {
     padding: 0 0;
     margin: 0 0.5rem;
   }
-
   .links a:hover {
     padding: 0;
     background: transparent;
   }
-
   .social-icons {
     display: flex;
   }
-
   .social-icons a {
     margin: 0 0.5rem;
     color: var(--hlwn-pumpkin-5);
     transition: var(--transition);
   }
-
   .social-icons a:hover {
     color: var(--hlwn-pumpkin-1);
   }
@@ -753,7 +729,6 @@ small {
     letter-spacing: 2px;
     font-size: 0.6rem;
   }
-
   .deadline h4:not(.expired) {
     font-size: 1.2rem;
     margin-bottom: 0.25rem;
@@ -773,7 +748,6 @@ small {
     text-align: center;
   }
 }
-
 /* zsvwg game CSS */
 
 #zsvwg-flex {
@@ -857,22 +831,19 @@ button>img:hover {
 .zsvwg-gameButton:hover {
   background-color: hsl(0, 98%, 50%);
 }
-
 /* Whack-a-Vamp CSS - game 2 */
-.whack-a-vamp-container {
+.whack-a-vamp-container { 
   display: flex;
   align-items: center;
   justify-content: center;
   color: #e20e0e;
 }
-
 .whack-a-vamp-square {
   width: 200px;
   height: 200px;
   border-style: solid;
   border-color: #e69c2d;
 }
-
 .whack-a-vamp-grid {
   display: flex;
   flex-flow: row wrap;
@@ -881,13 +852,11 @@ button>img:hover {
   width: 618px;
   height: 100vh;
 }
-
 .vamp {
   background-image: url("../img/vampire.png") !important;
   background-size: cover;
   z-index: 1;
 }
-
 .hit {
   background-image: url("../img/coffin.png") !important;
   background-size: cover;
