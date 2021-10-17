@@ -9,6 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Gory Stories</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+    <script>
+      $(document).ready(function () {
+        var audio = $("#continue")[0];
+        $("#continue_sound").mouseenter(function () {
+          audio.play();
+        });
+      })
+    </script>
   </head>
 
   <body class="tot-house1">
@@ -49,12 +60,20 @@
  </section>
 
     <div class="continue-story-flex">
-     
-    <a href="story3.html">
-      <img src="img/continue.png" alt="Continue to next page button" class="continue-button-house">
-    </a>
-  </div>
+      <a href="story3.html">
+        <img src="img/continue.png" alt="Continue to next page button" class="continue-button-house" id="continue_sound">
+      </a>
+    </div>
+
     </section>
+    <audio id="continue">
+      <!-- <source src="bg.mp3"></source> -->
+      <source src="audio_files/Continue.mp3" muted="muted">
+      </source>
+      <source src="audio_files/Continue.ogg" muted="muted">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
     <script src="js/candyskull.js"></script>
     <script src="js/javascript.js"></script>
   </body>

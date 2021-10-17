@@ -9,6 +9,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Gory Stories</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+    <script>
+      $(document).ready(function () {
+        var audio = $("#continue")[0];
+        $("#continue_sound").mouseenter(function () {
+          audio.play();
+        });
+      })
+    </script>
   </head>
 
   <body class="game2-body">
@@ -72,11 +84,20 @@
         <div id="flex-game-over">
           <p>You defeated all the enemies</p>
           <a href="tot-house2.html">
-            <img src="img/continue.png" alt="Continue to next page button" class="continue-button">
+            <img src="img/continue.png" id="continue_sound" alt="Continue to next page button" class="continue-button">
           </a>
         </div>
       </div>
     </section>
+
+    <audio id="continue">
+      <!-- <source src="bg.mp3"></source> -->
+      <source src="audio_files/Continue.mp3" muted="muted">
+      </source>
+      <source src="audio_files/Continue.ogg" muted="muted">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
     <script src="js/whack-a-vamp.js"></script>
   </body>
 </html>
