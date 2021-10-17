@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Gory Stories</title>
+</head>
+
+<body class="game1-body">
+  <header>
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <h2 class="logo">Gory Stories</h2>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="index.html">HomeSafe</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div id="zsvwg-flex">
+      <button class="wepon-buttons" onclick="decideWinner('stake')"><img src="img/stake.png"
+          alt="Wooden stake wepon to beat Vampire and Werewolf" height="100px" width="100"></button>
+      <button class="wepon-buttons" onclick="decideWinner('bat')"><img src="img/bat.png"
+          alt="baseball bat wepon to beat skeletons and zombies" height="100px" width="100"></button>
+      <button class="wepon-buttons" onclick="decideWinner('bullet')"><img src="img/bullet.png"
+          alt="Silver Bullet wepon to beat Werewolf and zombies" height="100px" width="100"></button>
+      <button class="wepon-buttons" onclick="decideWinner('water')"><img src="img/water.png"
+          alt="Holy Water wepon to beat Ghost and Vampir" height="100px" width="100"></button>
+      <button class="wepon-buttons" onclick="decideWinner('proton')"><img src="img/bat.png"
+          alt="Proton Pack wepon to beat Ghost and Skeleton" height="100px" width="100"></button>
+    </div>
+  </section>
+  <section id="zsvwg-scores">
+    <p>Player: <span id="score"> 0</span></p>
+    <p>Computer: <span id="loss"> 0</span></p>
+  </section>
+  <section>
+    <p>
+      Game rules:
+      baseball bat zombie and skeleton
+      silver bullet werewolf and zombie
+      wooden stake werewolf and vampire
+      holy water ghost and vampire
+      proton pack ghost and skeleton
+    </p>
+  </section>
+
+  <!-- modal to show users choice computers choice and result -->
+  <div class="zsvwg-modal" id="resultsModal">
+    <div class="zsvwg-modal-content">
+      <div id="flex-game-result1">
+        <p>You chose <span id="user-chose">paper-btn</span></p>
+        <p>Computer chose <span id="computer-chose">rock-btn</span></p>
+      </div>
+      <div id="flex-game-result2">
+        <p>The fight resulted in a <span id="game-result">you won</span></p>
+      </div>
+      <button class="zsvwg-gameButton" onclick="hideResult()">Game on!!</button>
+    </div>
+  </div>
+  <section class="zsvwg-modal" id="gameOverModal">
+    <div class="zsvwg-modal-content">
+      <div id="flex-game-over">
+        <p>The enemies were too strong for you retreat and try again!!</p>
+      </div>
+      <button class="zsvwg-gameButton" onclick="resetGame()">RESET GAME</button>
+    </div>
+  </section>
+  <section class="zsvwg-modal" id="nextPageModal">
+    <div class="zsvwg-modal-content">
+      <div id="flex-game-over">
+        <p>You defeated all the enemies</p>
+      </div>
+      <button class="zsvwg-gameButton" >Contine you reading</button>
+    </div>
+  </section>
+  <script src="js/zswvg.js"></script>
+</body>
+</html>

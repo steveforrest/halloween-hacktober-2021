@@ -1,85 +1,106 @@
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>Gory Stories</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Gory Stories</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
   </script>
-
   <script>
     $(document).ready(function () {
       var audio = $("#mySoundClip")[0];
-
       $("img").mouseenter(function () {
         audio.play();
       });
     })
   </script>
-</head>
+  </head>
 
+  <body>
 
-
-<body>
-
-  <nav>
-    <div class="nav-center">
-      <div class="nav-header">
-
-        <h2 class="logo">Gory Stories</h2>
-        <button class="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
+  
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+         
+          <h2 class="logo">Gory Stories</h2>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links --> 
+        <ul class="links">
+       
+          <li>
+            <a href="index.html">HomeSafe</a>
+          </li>
+       
+        </ul>
+       
       </div>
-      <!-- links -->
-      <ul class="links">
-        <li>
-          <a href="index.html">HomeSafe</a>
-        </li>
+    </nav>
 
-      </ul>
-
+        <!--  preloader  -->
+    <div class="preloader">
+      <img src="./img/skeleton.gif" alt="preloader" class="preloader__item" />
     </div>
-  </nav>
 
+    <!-- header -->
+    <header>
+      <video class="video-container" loop muted autoplay>
+        <source src="./img/halloweenhousevid.mp4" type="video/mp4" />
+      </video>
 
-  <section class="section-center ">
-    <article class="second-col">
-      <p class="intro-text mid-hdr">TRICK OR TREAT OR SOMETHING WORSE, <br>
-        PERHAPS A TALE, PERHAPS A CURSE, <br>
-        ENTER LIGHTLY, TREAD WITH FEAR,<br>
-        GHOSTS AND ZOMBIES ALWAYS NEAR,<br>
-        HEAR OUR STORY, PLAY OUR GAME,<br>
-        AND SHOULD YOU DIE, WE HOLD NO BLAME,<br>
-        IF YOU LEAVE LIKE COWARDS, OOH WELL,<br>
-        WE’LL FIND YOU LATER ....DOWN IN HELL! <br>
+      
 
-      </p>
+      <!-- Video Switch Here -->
+      <button class="switch-btn">
+        <span>play</span>
+        <span>pause</span>
+        <span class="switch"></span>
+      </button>
+    </header>
 
-      <p>to enter, click the pumpkin head</p>
+        <section class="section-center ">
+         <article class="second-col">
+          <p class="intro-text mid-hdr">TRICK OR TREAT OR SOMETHING WORSE, <br>
+            PERHAPS A TALE, PERHAPS A CURSE, <br>
+            ENTER LIGHTLY, TREAD WITH FEAR,<br>
+            GHOSTS AND ZOMBIES ALWAYS NEAR,<br>
+            HEAR OUR STORY, PLAY OUR GAME,<br>
+            AND SHOULD YOU DIE, WE HOLD NO BLAME,<br>
+            IF YOU LEAVE LIKE COWARDS, OOH WELL,<br>
+            WE’LL FIND YOU LATER ....DOWN IN HELL! <br>        
+          
+            </p>
 
-      <a href="story1.html" class="pumpkin-hldr">
-        <img class="pumpkin-img" src="img/pumpkin.png" alt="halloween picture" />
-      </a>
-      <!-- end of item -->
-    </article>
-    </article>
-  </section>
+            <p class="enter-here">to enter, click the pumpkin head</p>
 
-
-  <audio id="mySoundClip">
+            <a href="story1.html" class="pumpkin-hldr">
+              <img  class="pumpkin-img" src="img/pumpkin.png" alt="halloween picture" />
+            </a>
+             
+                  <!-- end of item -->
+            </article>
+             
+                    
+                  
+                  </article>
+    </section>
+<audio id="mySoundClip">
     <!-- <source src="bg.mp3"></source> -->
-    <source src="Luaghs_1.mp3" muted="muted">
+    <source src="audio_files/Pumpkin_Laugh.mp3" muted="muted">
     </source>
-    <source src="Luaghs_1.ogg" muted="muted">
+    <source src="audio_files/Pumpkin_Laugh.mp3" muted="muted">
     </source>
     Your browser isn't invited for super fun audio time.
   </audio>
-  <script src="js/javascript.js"></script>
-</body>
-
+    <script src="js/javascript.js"></script>
+  </body>
 </html>
