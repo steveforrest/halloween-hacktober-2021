@@ -37,38 +37,35 @@
         </ul>
       </div>
     </nav>
-
-    <section class="section-center">
-      <audio id="audio" src="audio_files/Candy.mp3"></audio>
+    <header>
+      <video class="video-container-candy-game" muted autoplay loop>
+        <source src="./img/hauntedhouse3vid.mp4" type="video/mp4" />
+      </video>
+  <audio id="audio" src="audio_files/Candy.mp3"></audio>
       <audio id="audio" src="audio_files/Candy.ogg"></audio>
-          
-
-      <h2 class="warning">Candy Skull's Game of Greed</h2>
-
-      <p class="candy-intro-txt">
-        While some are rich, Others are needy, <br />
-        Some are humble. others are greedy. <br />
-        Wicked candy waits, in a ghastly magic bowl, <br />
-        Guarded by Ghouls from a deep dark Hole. <br />
-        What is the perfect number, count with each breath, <br />
-        Too little, or too much, might just mean your death... <br />
-      </p>
+     
+    </header>
+    <section class="section-center">
+      <h2 class="warning">The Game of Greed</h2>
 
       <article class="candy-col">
         <div class="candygame">
           <p class="rules">
-            Mortal, you have two hands but one simple brain. Each of your hands
-            can grab up to 10 sweets if you are lucky, but the amount I allow
-            you to take is a secret.
+            Well, dear Mortal, you have two hands but one simple brain. Click
+            "Start Game" if you want some candy from the bowl, however I will
+            allow you only a secret amount. You can click "Grab More" if you
+            feel lucky. But if you are feeling greedy, you might be stuck with
+            me here forever more!
           </p>
-          <p>
+          <p class="rules">
             The total amount of sweets you can play for with each grab is the
-            same as the answer to this puzzle. Can you work it out?
+            same as the answer to this puzzle. Can you work it out? If you win
+            the correct amount you can move on in the story.
           </p>
 
           <h6 class="puzzle">
             Puzzle : "It was my birthday yesterday. <br />
-            The day before yesterday, I was only 16 years old. <br />
+            The day before yesterday, I was only 9 years old. <br />
             If today is January 1st, how old will I be on my birthday next
             year?"
           </h6>
@@ -76,43 +73,40 @@
           <div class="gravestone">
             <p id="candy-el">Play below for Candy</p>
 
-            <p id="sum-el">So...</p>
+            <p id="candy-el2"></p>
+            <p id="sum-el"></p>
 
 
-            <input type="button" value="PLAY" onclick="play()">
-            <!-- <audio id="audio" src="Candy.mp3"></audio>
-            <audio id="audio" src="Candy.ogg"></audio> -->
-        
-
-            <img
-              src="img/hands.png"
-              onclick="startGame();play()"
-              class="two-hand"
-              alt="start-game"
-              id="start_sound"
-            />
-            <img
-              src="img/one-hand.png"
-              onclick="newHandful();play()"
-              class="one-hand"
-              alt="play-again"
-            />
           </div>
           
           <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
-          <div class="btn-holder">
-            <button class="candy-game-btn" onclick="startGame();play()">
+
+          <div id="btn-holder">
+            <button id="candy-game-btn" onclick="startGame()">
               Start Game
             </button>
-            <button class="candy-game-btn" onclick="newHandful();play()">
-              Another handful?
-            </button>
+            <button id="candy-game-btn" onclick="newHandful()">
+              Grab More
+
+         
+
+            
           </div>
+          <a href="tot-house1.html" id="page-link">
+            <img
+              class="continue-btn-img"
+              src="img/continue.png"
+              alt="Continue Button"
+            />
+          </a>
           <small
-            >The answer to the Puzzle? 19. It will only happen if your birthday
+            >The answer to the Puzzle? 12. It will only happen if your birthday
             is on December 31st</small
           >
         </div>
+        <a class="exit" href="tot-house1.html"
+          >abandon game <i class="fas fa-door-open"></i
+        ></a>
       </article>
     </section>
 
