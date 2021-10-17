@@ -9,6 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Gory Stories</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+    <script>
+      $(document).ready(function () {
+        var audio = $("#continue")[0];
+        $("#continue_sound").mouseenter(function () {
+          audio.play();
+        });
+      })
+    </script>
   </head>
 
   <body class="house3-body">
@@ -45,11 +56,19 @@
         <p class="intro-text mid-hdr"> You dart toward the house through the gates slamming shut behind you allowing you to temporarily escaping the horde. The army of undead safely behind the fences of the house -You turn to find a variety of weapons left behind... It might be time use one.
         <!-- Link to Game 3-->     
         <a href="zsvwg-game.html" class="pumpkin-hldr">
-          <img  class="pumpkin-img" src="img/continue.png" alt="Continue Button" />
+          <img  class="pumpkin-img" src="img/continue.png" alt="Continue Button" id="continue_sound" />
         </a>
                 <!-- end of item -->
       </article>
     </section>
+    <audio id="continue">
+      <!-- <source src="bg.mp3"></source> -->
+      <source src="audio_files/Continue.mp3" muted="muted">
+      </source>
+      <source src="audio_files/Continue.ogg" muted="muted">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
 
     <script src="js/javascript.js"></script>
   </body>

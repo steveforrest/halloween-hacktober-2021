@@ -22,6 +22,7 @@ square.forEach(id => {
         // If the Mouse Click Equals the div id of Our hitPosition We Win.
         if(id.id === hitPosition){
             showNextPageModal()
+            
         }
     })
 })
@@ -30,10 +31,16 @@ randomSquare()
 
 /** Show nextPageModal*/
 function showNextPageModal() {
+    // Add sound file 
+    var findKeySound = new Audio("audio_files/find_key_door_open.mp3");
+    var findKeySound = new Audio("audio_files/find_key_door_open.ogg");
     //get modal element
     const modalNextPage = document.getElementById("nextPageModal");
     // get starting state of modal
     modalNextPage.style.display = "flex";
+
+    // Sound 
+    findKeySound.play()
 }
 
 
