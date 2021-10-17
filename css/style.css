@@ -351,6 +351,11 @@ article {
   flex-direction: column;
 }
 
+.enter-here {
+  color: var(--hlwn-purple-1);
+  font-weight: 500;
+}
+
 .pumpkin-hldr {
   display: flex;
   justify-content: center;
