@@ -440,6 +440,11 @@ article {
   margin-bottom: 1rem;
   
 }
+
+#page-link:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 .continue-btn-img {
   width: 100%;
   padding: 10px;
@@ -600,9 +605,9 @@ article {
  
   margin: 0;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-family: var(--ff-primary);
-  font-weight: 400;
+  font-weight: 300;
   color: var(--hlwn-pumpkin-5);
   animation: spooky 3.5s linear infinite alternate;
   text-shadow: 4px 4px 18px #026d0b;
