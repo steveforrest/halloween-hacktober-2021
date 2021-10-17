@@ -414,7 +414,7 @@ article {
 .continue-btn-img {
   width: 100%;
   padding: 10px;
-  background-color: var(--hlwn-purple-5);
+  /* background-color: var(--hlwn-purple-5); */
   border-radius: 20px;
 }
 /* Video Styling - Brian */
@@ -568,14 +568,15 @@ article {
 }
 
 #message-el {
+ 
   margin: 0;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: var(--ff-primary);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--hlwn-pumpkin-5);
   animation: spooky 3.5s linear infinite alternate;
-  text-shadow: 2px 2px 18px #25bb32;
+  text-shadow: 4px 4px 18px #026d0b;
   text-transform: uppercase;
   letter-spacing: 3.5px;
   width: 100%;
@@ -617,7 +618,7 @@ article {
   }
 }
 
-.gravestone {
+.gravestone {  
   background-image: url(../img/candygrave2bgc.png);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -664,13 +665,14 @@ article {
   transition: 2s all ease;
 }
 
-.btn-holder {
+#btn-holder {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.candy-game-btn {
+#candy-game-btn {
+  display: block;
   width: 10em;
   padding: 6px 10px;
   font-size: 1rem;
@@ -689,7 +691,7 @@ article {
   transition: box-shadow 0.8s, border-top 0.8s, border-right 0.8s;
 }
 
-.candy-game-btn:hover {
+#candy-game-btn:hover {
   box-shadow: inset 10px 10px 20px #4b494b, inset -10px -10px 20px #737173;
   border-top: 3px solid #666;
   border-right: 3px solid #666;
@@ -698,6 +700,11 @@ article {
 
 small {
   color: grey;
+}
+
+.exit {
+  color: var(--hlwn-red-dark);
+  font-size: 14px;
 }
 
 @media screen and (min-width: 992px) {

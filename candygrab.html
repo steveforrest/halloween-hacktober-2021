@@ -34,11 +34,6 @@
       </video>
 
       <!-- Video Switch Here -->
-      <button class="switch-btn">
-        <span>play</span>
-        <span>pause</span>
-        <span class="switch"></span>
-      </button>
     </header>
     <section class="section-center">
       <h2 class="warning">The Game of Greed</h2>
@@ -60,7 +55,7 @@
 
           <h6 class="puzzle">
             Puzzle : "It was my birthday yesterday. <br />
-            The day before yesterday, I was only 16 years old. <br />
+            The day before yesterday, I was only 9 years old. <br />
             If today is January 1st, how old will I be on my birthday next
             year?"
           </h6>
@@ -72,27 +67,32 @@
           </div>
 
           <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
-          <div class="btn-holder">
-            <button class="candy-game-btn" onclick="startGame()">
+          <div id="btn-holder">
+            <button id="candy-game-btn" onclick="startGame()">
               Start Game
             </button>
-            <button class="candy-game-btn" onclick="newHandful()">
+            <button id="candy-game-btn" onclick="newHandful()">
               Grab More
             </button>
           </div>
-         <a href="candygrab.html" id="page-link">
-          <img class="continue-btn-img" src="img/continue.png" alt="Continue Button" />
-        </a>  
+          <a href="tot-house1.html" id="page-link">
+            <img
+              class="continue-btn-img"
+              src="img/continue.png"
+              alt="Continue Button"
+            />
+          </a>
           <small
-            >The answer to the Puzzle? 19. It will only happen if your birthday
+            >The answer to the Puzzle? 12. It will only happen if your birthday
             is on December 31st</small
           >
         </div>
-       
+        <a class="exit" href="tot-house1.html"
+          >abandon game <i class="fas fa-door-open"></i
+        ></a>
       </article>
-      
     </section>
-     
+
     <script src="js/candyskull.js"></script>
     <script src="js/javascript.js"></script>
   </body>

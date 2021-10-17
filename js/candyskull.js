@@ -24,28 +24,35 @@ function startGame() {
 
 
 function getRandomNumber() {
-    let randomNumber = Math.floor(Math.random() *9) + 1
+    let randomNumber = Math.floor(Math.random() *5) + 1
     
     return randomNumber
 }
 function displayHide() {
     document.getElementById("page-link").style.display="flex";
+    document.getElementById("btn-holder").style.display="none"; 
+    window.scrollTo(0,document.body.scrollHeight);  
  }
 
 function renderGame () {       
-     candiesEl.innerText = `in each hand,
-     ${candy[0]} and ${candy[1]} candies `
+     candiesEl.innerText = "Thats a greedy grab!"
+     
+    //  `in each hand,
+    //  ~${candy[0]}~ and ~${candy[1]}~ candies `
     // for (let i = 0; i < candy.length; i++) {
     //     candiesEl.innerText += candy[i] + " "
     // }
     
-    sumEl.innerText = `Making ~${sum}~ in your bag. 
+    sumEl.innerText = ` Bag Total: ${sum} Treats     
     click "Grab More" if you dare`
 
-    if (sum <= 18) {        
-        message ="You can grab more sweets!"
+    if (sum < 4){
+        message = "Still lots of room in your bag!."
+    }       
+    else if( sum >= 5 && sum <= 11) {        
+        message ="You can still grab more sweets!"
         
-    }else if (sum === 19) {
+    }else if (sum === 12) {
         message = "Your Soul is Saved, But your teeth will rot. Leave this place with what you've got"        
         hasFullBag = true
         displayHide()       
