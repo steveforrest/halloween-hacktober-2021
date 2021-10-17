@@ -960,7 +960,7 @@ button > img:hover{
 
 /*continue button*/
 .continue-button{
-  height: 6rem;
+  height: 15rem;
   width:auto
 }
 .continue-story-flex{
@@ -973,3 +973,19 @@ button > img:hover{
   height: 10rem;
   width:auto
 }
+.full-key{
+  height: 200px;
+  padding: 4rem 0;
+}
+.key-modal {	
+  display: none;	
+  z-index: 3;	
+  position: fixed;	
+  left: 0;	
+  top: 0;	
+  height: 100%;	
+  width: 100%;	
+  overflow: hidden;	
+  background-color: rgba(0, 0, 0, 0.4);	
+  text-align: centre;	
+}	
