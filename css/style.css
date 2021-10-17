@@ -105,6 +105,30 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
+.tot-house1{
+  background-image: url(../img/doorway2.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.tot-house2{
+  background-image: url(../img/halloweendoor2.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.tot-house3{
+  background-image: url(../img/halloweendoor.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.tot-house4{
+  background-image: url(../img/doorway5.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
 
 ul {
   list-style: none;
