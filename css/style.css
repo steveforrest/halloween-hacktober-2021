@@ -940,14 +940,14 @@ button > img:hover{
 
 }
 .key {
-  background-image: url("../img/key_part.png");
+  background-image: url("../img/hiddenkey.png");
   background-size: cover;
   z-index: 1;
 }
 
 /*continue button*/
 .continue-button{
-  height: 6rem;
+  height: 15rem;
   width:auto
 }
 
@@ -996,3 +996,21 @@ button > img:hover{
   font-family: var(--ff-primary);
   font-weight: 400;
 }
+
+.full-key{
+  height: 200px;
+  padding: 4rem 0;
+}
+.key-modal {	
+  display: none;	
+  z-index: 3;	
+  position: fixed;	
+  left: 0;	
+  top: -150;	
+  height: 100%;	
+  width: 100%;	
+  overflow: hidden;	
+  background-color: rgba(0, 0, 0, 0.4);	
+  text-align: centre;	
+}	
+
