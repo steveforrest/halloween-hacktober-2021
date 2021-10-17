@@ -858,28 +858,42 @@ button > img:hover{
   background-color: brown;
   border-radius: 10px;
 }
-.zsvwg-modal {
-  display: none;
-  z-index: 1;
-  height: 10%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+.zsvwg-modal {	
+  display: none;	
+  z-index: 3;	
+  position: fixed;	
+  left: 0;	
+  top: 0;	
+  height: 100%;	
+  width: 100%;	
+  overflow: auto;	
+  background-color: rgba(0, 0, 0, 0.4);	
+  text-align: centre;	
+}	
+.zsvwg-modal-content {	
+  background-color: #f4f4f438;	
+  margin: 30% auto;	
+  padding: 15px;	
+  width: 80%;	
+  justify-content: center;	
+  overflow: auto;	
+  border: rgba(128, 128, 128, 0.82) 4px solid;	
+  border-radius: 10px;	
+  height: fit-content;	
+  text-align: center;	
 }
-
-.zsvwg-modal-content {
-  background-color: #f4f4f4;
-  margin: 20% auto;
-  padding: 15px;
-  width: 80%;
-  position: absolute;
-  top: 15%;
-  left: 10%;
-  justify-content: center;
-  overflow: auto;
-  border: red 4px solid;
-  border-radius: 10px;
-  height: fit-content;
+.zsvwg-gameButton {	
+  width: 35%;	
+  height: auto;	
+  background-color: hsl(125, 67%, 44%);	
+  color: white;	
+  border-radius: 10px;	
+  padding: 1rem;	
+  font-size: 1rem;	
+  border: hsl(271, 100%, 14%)	
+}	
+.zsvwg-gameButton:hover {	
+  background-color: hsl(0, 98%, 50%);	
 }
 /* Whack-a-Vamp CSS - game 2 */
 .whack-a-vamp-container { 
