@@ -46,10 +46,10 @@ function renderGame () {
     sumEl.innerText = ` Bag Total: ${sum} Treats     
     click "Grab More" if you dare`
 
-    if (sum < 4){
+    if (sum < 5){
         message = "Still lots of room in your bag!."
     }       
-    else if( sum >= 5 && sum <= 11) {        
+    else if( sum >= 6 && sum <= 11) {        
         message ="You can still grab more sweets!"
         
     }else if (sum === 12) {
