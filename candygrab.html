@@ -9,6 +9,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Gory Stories</title>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+
   </head>
 
   <body class="game3-body">
@@ -62,18 +71,25 @@
 
           <div class="gravestone">
             <p id="candy-el">Play below for Candy</p>
+
             <p id="candy-el2"></p>
             <p id="sum-el"></p>
-          </div>
 
+
+          </div>
+          
           <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
+
           <div id="btn-holder">
             <button id="candy-game-btn" onclick="startGame()">
               Start Game
             </button>
             <button id="candy-game-btn" onclick="newHandful()">
               Grab More
-            </button>
+
+         
+
+            
           </div>
           <a href="tot-house1.html" id="page-link">
             <img
@@ -97,3 +113,4 @@
     <script src="js/javascript.js"></script>
   </body>
 </html>
+
