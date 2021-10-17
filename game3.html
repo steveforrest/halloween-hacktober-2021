@@ -9,6 +9,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Gory Stories</title>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+
   </head>
 
   <body class="game3-body">
@@ -30,6 +39,10 @@
     </nav>
 
     <section class="section-center">
+      <audio id="audio" src="Candy.mp3"></audio>
+      <audio id="audio" src="Candy.ogg"></audio>
+          
+
       <h2 class="warning">Candy Skull's Game of Greed</h2>
 
       <p class="candy-intro-txt">
@@ -65,26 +78,33 @@
 
             <p id="sum-el">So...</p>
 
+
+            <input type="button" value="PLAY" onclick="play()">
+            <!-- <audio id="audio" src="Candy.mp3"></audio>
+            <audio id="audio" src="Candy.ogg"></audio> -->
+        
+
             <img
               src="img/hands.png"
-              onclick="startGame()"
+              onclick="startGame();play()"
               class="two-hand"
               alt="start-game"
+              id="start_sound"
             />
             <img
               src="img/one-hand.png"
-              onclick="newHandful()"
+              onclick="newHandful();play()"
               class="one-hand"
               alt="play-again"
             />
           </div>
-
+          
           <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
           <div class="btn-holder">
-            <button class="candy-game-btn" onclick="startGame()">
+            <button class="candy-game-btn" onclick="startGame();play()">
               Start Game
             </button>
-            <button class="candy-game-btn" onclick="newHandful()">
+            <button class="candy-game-btn" onclick="newHandful();play()">
               Another handful?
             </button>
           </div>
@@ -95,6 +115,7 @@
         </div>
       </article>
     </section>
+
     <script src="js/candyskull.js"></script>
     <script src="js/javascript.js"></script>
   </body>
