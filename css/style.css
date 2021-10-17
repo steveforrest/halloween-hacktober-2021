@@ -950,12 +950,35 @@ button > img:hover{
 .center-grid{
   display: flex;
   justify-content: center;
-
 }
 .key {
   background-image: url("../img/hiddenkey.png");
   background-size: cover;
   z-index: 1;
+}
+.key-modal {	
+  display: none;	
+  z-index: 3;	
+  position: fixed;	
+  left: 0;	
+  top: 0;	
+  height: 100%;	
+  width: 100%;	
+  overflow: auto;	
+  background-color: rgba(0, 0, 0, 0.4);	
+  text-align: centre;	
+}	
+.key-modal-content {	
+  background-color: #f4f4f438;	
+  margin: 30% auto;	
+  padding: 15px;	
+  width: 80%;	
+  justify-content: center;	
+  overflow: auto;	
+  border: rgba(128, 128, 128, 0.82) 4px solid;	
+  border-radius: 10px;	
+  height: fit-content;	
+  text-align:
 }
 
 /*continue button*/
