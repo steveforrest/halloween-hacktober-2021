@@ -814,7 +814,7 @@ small {
 }
 /* zsvwg game CSS */
 #zsvwg-flex {
-      height: 60%;
+      height: 40%;
       width: 80%;
       display: flex;
       justify-content: space-evenly;
@@ -1025,5 +1025,19 @@ button > img:hover{
   height: 200px;
   padding: 4rem 0;
 }
+/*zsvwg rules*/
+.zsvwg-rules{
+  text-align:center;
+  padding: 2rem 4rem;
+}
 
-
+.list-rules{
+  display: flex;
+  margin-bottom: 1rem;
+  color: var(--hlwn-red-dark);
+  font-weight: 400;
+  text-shadow: var(--green-shadow);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+}

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,76 +8,55 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>Gory Stories</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-</script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
 
-<script>
-  $(document).ready(function () {
-    var audio = $("#gunshot")[0];
-    var audio1 = $("#bottle")[0]; 
-    var audio2 = $("#bat")[0];
-    var audio3 = $("#proton")[0];
-    var audio4 = $("#stake")[0];
-    var audio5 = $("#continue")[0];
-    var audio6 = $("#game_loss")[0];
-    var audio7 = $("#game_win")[0];
+  <script>
+    $(document).ready(function () {
+      var audio = $("#gunshot")[0];
+      var audio1 = $("#bottle")[0];
+      var audio2 = $("#bat")[0];
+      var audio3 = $("#proton")[0];
+      var audio4 = $("#stake")[0];
+      var audio5 = $("#continue")[0];
+      var audio6 = $("#game_loss")[0];
+      var audio7 = $("#game_win")[0];
 
-    $("#gunshot_sound").click(function () {
-      audio.play();
-    });
+      $("#gunshot_sound").click(function () {
+        audio.play();
+      });
 
-    $("#bottle_sound").click(function () {
-      audio1.play();
-    });
+      $("#bottle_sound").click(function () {
+        audio1.play();
+      });
 
-    $("#bat_sound").click(function () {
-      audio2.play();
-    });
+      $("#bat_sound").click(function () {
+        audio2.play();
+      });
 
-    $("#proton_sound").click(function () {
-      audio3.play();
-    });
+      $("#proton_sound").click(function () {
+        audio3.play();
+      });
 
-    $("#stake_sound").click(function () {
-      audio4.play();
-    });
-    
+      $("#stake_sound").click(function () {
+        audio4.play();
+      });
 
-    // $("#gunshot_sound").mouseenter(function () {
-    //   audio.play();
-    // });
+      $("#continue_sound").click(function () {
+        audio5.play();
+      });
 
-    // $("#bottle_sound").mouseenter(function () {
-    //   audio1.play();
-    // });
+      $("#flex-game-over").click(function () {
+        audio6.play();
+      });
 
-    // $("#bat_sound").mouseenter(function () {
-    //   audio2.play();
-    // });
+      $("#flex-game-result2").click(function () {
+        audio7.play();
+      });
 
-    // $("#proton_sound").mouseenter(function () {
-    //   audio3.play();
-    // });
 
-    // $("#stake_sound").mouseenter(function () {
-    //   audio4.play();
-    // });
-
-    $("#continue_sound").click(function () {
-      audio5.play();
-    });
-
-    $("#flex-game-over").click(function () {
-      audio6.play();
-    });
-
-    $("#flex-game-result2").click(function () {
-      audio7.play();
-    });
-
-    
-  })
-</script>
+    })
+  </script>
 </head>
 
 <body class="game1-body">
@@ -97,11 +77,39 @@
       </div>
     </nav>
   </header>
+  <section class="zsvwg-rules">
+    <p>You happen upon a horde of undead, wondering how you will survive you spot a stash of wepons. You must choose wisely not all of the wepons will be as effecting on each of your attackers!!!</p>
+    <p>
+      Game rules:
+      </p>
+      <div class="list-rules">
+      <p>
+         * Baseball bat beats: zombie and skeleton
+      </p>
+      <p>
+        * Silver bullet beats: werewolf and zombie
+      </p>
+      </div>
+      <div class="list-rules">
+        <p>
+      <p>
+        * Wooden stake beats: werewolf and vampire
+      </p>
+      <p>
+        * Holy water beats: ghost and vampire
+      </p>
+      <div class="list-rules">
+      <p>
+        * Proton pack beats: ghost and skeleton
+      </p>
+      </div>
+    </div>
+  </section>
   <section>
     <div id="zsvwg-flex">
       <button class="wepon-buttons" id="stake_sound" onclick="decideWinner('stake')"><img src="img/stake.png"
           alt="Wooden stake wepon to beat Vampire and Werewolf" height="100px" width="100"></button>
-      <button class="wepon-buttons" id="bat_sound"onclick="decideWinner('bat')"><img src="img/bat.png"
+      <button class="wepon-buttons" id="bat_sound" onclick="decideWinner('bat')"><img src="img/bat.png"
           alt="baseball bat wepon to beat skeletons and zombies" height="100px" width="100"></button>
       <button class="wepon-buttons" id="gunshot_sound" onclick="decideWinner('bullet')"><img src="img/bullet.png"
           alt="Silver Bullet wepon to beat Werewolf and zombies" height="100px" width="100"></button>
@@ -115,16 +123,7 @@
     <p>Player: <span id="score"> 0</span></p>
     <p>Computer: <span id="loss"> 0</span></p>
   </section>
-  <section>
-    <p>
-      Game rules:
-      baseball bat zombie and skeleton
-      silver bullet werewolf and zombie
-      wooden stake werewolf and vampire
-      holy water ghost and vampire
-      proton pack ghost and skeleton
-    </p>
-  </section>
+
 
   <!-- modal to show users choice computers choice and result -->
   <div class="zsvwg-modal" id="resultsModal">
@@ -170,61 +169,62 @@
 
   <audio id="bottle">
     <source src="audio_files/zswvg_bottle.mp3" muted="muted">
-  </source>
-  <source src="audio_files/zswvg_bottle.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/zswvg_bottle.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
   <audio id="bat">
     <source src="audio_files/zswvg_bat.mp3" muted="muted">
-  </source>
-  <source src="audio_files/zswvg_bat.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/zswvg_bat.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
   <audio id="proton">
     <source src="audio_files/zswvg_protonpack.mp3" muted="muted">
-  </source>
-  <source src="audio_files/zswvg_protonpack.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/zswvg_protonpack.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
   <audio id="stake">
     <source src="audio_files/zswvg_stake.mp3" muted="muted">
-  </source>
-  <source src="audio_files/zswvg_stake.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/zswvg_stake.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
   <audio id="continue">
     <source src="audio_files/Continue.mp3" muted="muted">
-  </source>
-  <source src="audio_files/Continue.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/Continue.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
   <audio id="game_loss">
     <source src="audio_files/WAVG_Lose_Sound.mp3" muted="muted">
-  </source>
-  <source src="audio_files/WAVG_Lose_Sound.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/WAVG_Lose_Sound.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
   <audio id="game_win">
     <source src="audio_files/WAVG_Win_Sound.mp3" muted="muted">
-  </source>
-  <source src="audio_files/WAVG_Win_Sound.ogg" muted="muted">
-  </source>
+    </source>
+    <source src="audio_files/WAVG_Win_Sound.ogg" muted="muted">
+    </source>
     Your browser isn't invited for super fun audio time.
   </audio>
 
 
   <script src="js/zswvg.js"></script>
 </body>
+
 </html>
