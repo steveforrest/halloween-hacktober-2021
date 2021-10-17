@@ -108,11 +108,25 @@ Users are transported though the story via modal links and continue buttons. The
 
 **Existing Features:**
 
+* Story pages 
+* Game pages 
+* House pages 
+
 5. _Surface Plane_
+
+**Colours:**
+
+* The colour scheme was kept dark with reds, oranges and greens to portary a creepy halloween vibe.
+
+**Fonts:**
+
+* Google Fonts was used to import the fonts Creepster, Sans pro and Pt serif into the base.css file. These fonts were used throughout the site.
 
 ## User Stories
 
 ### Target Audience
+
+The target audience will be children and adults of all ages who enjoy interactive stories and playing games. The theme of the site is halloween so users can expect some spooks and scares but nothing really terrifying. There are some scary sounds playing on some of the pages too.
 
 ## Features
 

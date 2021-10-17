@@ -25,7 +25,7 @@
       function play() {
         var audio = document.getElementById("audio");
         audio.play();
-      }
+        }
     </script>
 
 
@@ -51,13 +51,16 @@
     <header>
       <video class="video-container-candy-game" muted autoplay loop>
         <source src="./img/hauntedhouse3vid.mp4" type="video/mp4" />
-      </video> 
-    </header>
+
+      </video>
+  <audio id="audio" src="audio_files/Candy.mp3"></audio>
+  <audio id="audio" src="audio_files/Candy.ogg"></audio>
+     
+</header>
     <section class="section-center">
       <audio id="audio" src="audio_files/Candy.mp3"></audio>
   <audio id="audio" src="audio_files/Candy.ogg"></audio>
       <h2 class="warning">The Game of Greed</h2>
-
       <article class="candy-col">
         <div class="candygame">
           <p class="rules">
@@ -82,11 +85,8 @@
 
           <div class="gravestone">
             <p id="candy-el">Play below for Candy</p>
-
             <p id="candy-el2"></p>
             <p id="sum-el"></p>
-
-
           </div>
           
           <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
@@ -97,8 +97,9 @@
             </button>
             <button id="candy-game-btn" onclick="newHandful();play()">
               Grab More
-
+            
          
+
 
             
           </div>
