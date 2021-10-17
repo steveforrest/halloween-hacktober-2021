@@ -944,3 +944,13 @@ button > img:hover{
   height: 6rem;
   width:auto
 }
+.continue-story-flex{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 1100px;
+}
+.continue-button-house{
+  height: 10rem;
+  width:auto
+}
