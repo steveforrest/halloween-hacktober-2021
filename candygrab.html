@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Gory Stories</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+    <script>
+      $(document).ready(function () {
+        var audio = $("#abandon")[0];
+        $("#abandon_sound").mouseenter(function () {
+          audio.play();
+        });
+      })
+    </script>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+        }
+    </script>
+
+
+  </head>
+
+  <body class="game3-body">
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <h2 class="logo">Gory Stories</h2>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">HomeSafe</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <video class="video-container-candy-game" muted autoplay loop>
+        <source src="./img/hauntedhouse3vid.mp4" type="video/mp4" />
+
+      </video>
+  <audio id="audio" src="audio_files/Candy.mp3"></audio>
+  <audio id="audio" src="audio_files/Candy.ogg"></audio>
+     
+</header>
+    <section class="section-center">
+      <audio id="audio" src="audio_files/Candy.mp3"></audio>
+  <audio id="audio" src="audio_files/Candy.ogg"></audio>
+      <h2 class="warning">The Game of Greed</h2>
+      <article class="candy-col">
+        <div class="candygame">
+          <p class="rules">
+            Well, dear Mortal, you have two hands but one simple brain. Click
+            "Start Game" if you want some candy from the bowl, however I will
+            allow you only a secret amount. You can click "Grab More" if you
+            feel lucky. But if you are feeling greedy, you might be stuck with
+            me here forever more!
+          </p>
+          <p class="rules">
+            The total amount of sweets you can play for with each grab is the
+            same as the answer to this puzzle. Can you work it out? If you win
+            the correct amount you can move on in the story.
+          </p>
+
+          <h6 class="puzzle">
+            Puzzle : "It was my birthday yesterday. <br />
+            The day before yesterday, I was only 9 years old. <br />
+            If today is January 1st, how old will I be on my birthday next
+            year?"
+          </h6>
+
+          <div class="gravestone">
+            <p id="candy-el">Play below for Candy</p>
+            <p id="candy-el2"></p>
+            <p id="sum-el"></p>
+          </div>
+          
+          <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
+          <div id="btn-holder">
+            <button id="candy-game-btn" onclick="startGame();play()">
+              Start Game
+            </button>
+            <button id="candy-game-btn" onclick="newHandful();play()">
+              Grab More
+          </div>
+          <a href="tot-house1.html" id="page-link">
+            <img
+              class="continue-btn-img"
+              src="img/continue.png"
+              alt="Continue Button"
+            />
+          </a>
+          <small
+            >The answer to the Puzzle? 12. It will only happen if your birthday
+            is on December 31st</small
+          >
+        </div>
+        <a class="exit" href="tot-house1.html" id="abandon_sound"
+          >abandon game <i class="fas fa-door-open"></i
+        ></a>
+      </article>
+    </section>
+    
+    <audio id="abandon">
+      <!-- <source src="bg.mp3"></source> -->
+      <source src="audio_files/Run_voice_lose_WAM_game.mp3" muted="muted">
+      </source>
+      <source src="audio_files/Run_voice_lose_WAM_game.ogg" muted="muted">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <script src="js/candyskull.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
+

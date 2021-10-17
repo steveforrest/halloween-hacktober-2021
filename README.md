@@ -132,9 +132,21 @@ The target audience will be children and adults of all ages who enjoy interactiv
 
 ### Features Visiable across All Pages
 
+
+
 ### Features visable on <> page
 
+
+
 ### Future Features
+
+* _Voice Over_ - A voice to read the text.
+
+* _Responsiveness_ - Make the site responsive across all screen sizes.
+
+* _Score Keeping_ - Add the ability to keep a score of the amount of candy you get based on how well you do in the games.
+
+* _Animation_ - Animation to highlight when users lose a game.
 
 ## Technologies Used
 
