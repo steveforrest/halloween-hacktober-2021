@@ -9,17 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Gory Stories</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-  </script>
-    <script>
-      $(document).ready(function () {
-        var audio = $("#abandon")[0];
-        $("#abandon_sound").mouseenter(function () {
-          audio.play();
-        });
-      })
-    </script>
 
     <script>
       function play() {
@@ -51,15 +40,12 @@
     <header>
       <video class="video-container-candy-game" muted autoplay loop>
         <source src="./img/hauntedhouse3vid.mp4" type="video/mp4" />
-
       </video>
   <audio id="audio" src="audio_files/Candy.mp3"></audio>
   <audio id="audio" src="audio_files/Candy.ogg"></audio>
      
-</header>
+    </header>
     <section class="section-center">
-      <audio id="audio" src="audio_files/Candy.mp3"></audio>
-  <audio id="audio" src="audio_files/Candy.ogg"></audio>
       <h2 class="warning">The Game of Greed</h2>
       <article class="candy-col">
         <div class="candygame">
@@ -90,12 +76,14 @@
           </div>
           
           <h2 id="message-el">Hello, mortal. Do you like Candy?</h2>
+
           <div id="btn-holder">
-            <button id="candy-game-btn" onclick="startGame();play()">
+            <button id="candy-game-btn" onclick="startGame()">
               Start Game
             </button>
-            <button id="candy-game-btn" onclick="newHandful();play()">
-              Grab More
+            <button id="candy-game-btn" onclick="newHandful()">
+              Grab More    
+            </button>
           </div>
           <a href="tot-house1.html" id="page-link">
             <img
@@ -109,20 +97,11 @@
             is on December 31st</small
           >
         </div>
-        <a class="exit" href="tot-house1.html" id="abandon_sound"
+        <a class="exit" href="tot-house1.html"
           >abandon game <i class="fas fa-door-open"></i
         ></a>
       </article>
     </section>
-    
-    <audio id="abandon">
-      <!-- <source src="bg.mp3"></source> -->
-      <source src="audio_files/Run_voice_lose_WAM_game.mp3" muted="muted">
-      </source>
-      <source src="audio_files/Run_voice_lose_WAM_game.ogg" muted="muted">
-      </source>
-      Your browser isn't invited for super fun audio time.
-    </audio>
 
     <script src="js/candyskull.js"></script>
     <script src="js/javascript.js"></script>
