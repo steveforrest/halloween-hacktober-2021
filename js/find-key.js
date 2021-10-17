@@ -21,8 +21,7 @@ square.forEach(id => {
     id.addEventListener('mouseup', () => {
         // If the Mouse Click Equals the div id of Our hitPosition We Win.
         if(id.id === hitPosition){
-            showNextPageModal()
-            
+            showNextPageModal()    
         }
     })
 })
