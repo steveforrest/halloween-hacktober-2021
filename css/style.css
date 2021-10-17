@@ -877,6 +877,19 @@ button > img:hover{
   height: fit-content;	
   text-align: center;	
 }
+.zsvwg-gameButton {	
+  width: 35%;	
+  height: auto;	
+  background-color: hsl(125, 67%, 44%);	
+  color: white;	
+  border-radius: 10px;	
+  padding: 1rem;	
+  font-size: 1rem;	
+  border: hsl(271, 100%, 14%)	
+}	
+.zsvwg-gameButton:hover {	
+  background-color: hsl(0, 98%, 50%);	
+}
 /* Whack-a-Vamp CSS - game 2 */
 .whack-a-vamp-container { 
   display: flex;
