@@ -34,9 +34,9 @@
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px hsla(101, 90%, 49%, 0.2);
-  --green-shadow: 0 13.36px 8.896px hsla(93, 92%, 47%, 0.91), 0 -2px 1px #54ed0c;
-  --eyes-shadow: 2px 6.36px 8.896px hsla(98, 48%, 18%, 0.91),
-    0px -0px 11px hsl(96, 97%, 36%);
+  --green-shadow: 1px 13px 9px #6de60ae8, 0 -2px 1px #73d147, 0 2px 1px #091802;
+  --eyes-shadow: 2px 6.36px 8.896px hsla(98, 48%, 18%, 0.91), 0 2px 1px #091802,
+    0px -0px 11px #4ab503;
   --max-width: 1170px;
   --fixed-width: 620px;
 }
@@ -51,6 +51,7 @@ body {
   line-height: 1.5;
   font-size: 0.9rem;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .house1-body {
@@ -108,6 +109,7 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  
 }
 .tot-house2{
   background-image: url(../img/halloweendoor2.jpg);
@@ -312,6 +314,7 @@ nav::after {
   text-shadow: var(--green-shadow);
   margin-top: 0;
   font-family: var(--ff-primary);
+  font-weight: 400;
 }
 
 .links a {
@@ -376,7 +379,7 @@ article {
 }
 
 .enter-here {
-  color: var(--hlwn-purple-1);
+  color: var(--hlwn-purple-3);
   font-weight: 500;
 }
 
@@ -802,23 +805,7 @@ small {
 }
 
 @media screen and (max-width: 660px) {
-  .deadline-format span {
-    letter-spacing: 2px;
-    font-size: 0.6rem;
-  }
-  .deadline h4:not(.expired) {
-    font-size: 1.2rem;
-    margin-bottom: 0.25rem;
-    letter-spacing: var(--spacing);
-  }
-
-  .deadline-format {
-    color: var(--hlwn-red-dark);
-    text-shadow: var(--green-shadow);
-    margin-right: 1rem;
-    width: 3rem;
-    height: 3rem;
-  }
+  
 
   .sml-hdr {
     font-size: 1.1rem;
@@ -963,16 +950,53 @@ button > img:hover{
   height: 15rem;
   width:auto
 }
+
 .continue-story-flex{
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 1100px;
+  
 }
 .continue-button-house{
   height: 10rem;
   width:auto
 }
+
+.continue-button-house:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.intro-text-house {
+  color: var(--hlwn-white);
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  text-shadow: var(--eyes-shadow);
+  text-align: center;
+  font-family: var(--ff-secondary);
+  text-transform: capitalize;
+}
+
+.house-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+ 
+}
+
+.reward-house{ 
+  color: var(--hlwn-pumpkin-5);
+  letter-spacing: 4.3px;
+  text-shadow: var(--green-shadow);
+  padding: 10px 10px 32px 10px;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+}
+
 .full-key{
   height: 200px;
   padding: 4rem 0;
@@ -982,10 +1006,11 @@ button > img:hover{
   z-index: 3;	
   position: fixed;	
   left: 0;	
-  top: 0;	
+  top: -150;	
   height: 100%;	
   width: 100%;	
   overflow: hidden;	
   background-color: rgba(0, 0, 0, 0.4);	
   text-align: centre;	
 }	
+
