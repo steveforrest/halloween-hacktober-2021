@@ -8,15 +8,25 @@ let comChoice = Math.ceil(Math.random() * 5);
 if (comChoice === 1) {
         return "Zombie";
     } else if (comChoice === 2) {
+                    
+
         return "Skeleton";
     } else if (comChoice === 3) {
+                    
+
         return "Vampire";
     } else if (comChoice === 4) {
+                    
+
         return "Werewolf";
     } else if (comChoice === 5) {
+                    
+
         return "Ghost";
     } else {
         return "error";
+                    
+
     }
 }
 /**
