@@ -3,6 +3,15 @@ const vamp = document.querySelectorAll('.vamp')
 const timeLeft = document.querySelector('#time-left')
 let score = document.querySelector('#score')
 
+// Audio files. ogg included for Firefox support
+var draculaHitSound = new Audio("audio_files/WAVG_Drac_Hit_2.mp3"); // buffers automatically when created
+var loseGameSound = new Audio("audio_files/WAVG_Lose_Sound.mp3");
+var winGameSound = new Audio("audio_files/WAVG_Win_Sound.mp3");
+var draculaHitSound = new Audio("audio_files/WAVG_Drac_Hit_2.ogg"); 
+var loseGameSound = new Audio("audio_files/WAVG_Lose_Sound.ogg");
+var winGameSound = new Audio("audio_files/WAVG_Win_Sound.ogg");
+
+
 let result = 0
 let currentTime = timeLeft.textContent
 
@@ -26,6 +35,7 @@ square.forEach(id => {
     id.addEventListener('mouseup', () => {
         // If the Mouse Click Equals the div id of Our hitPosition We Win.
         if(id.id === hitPosition){
+            draculaHitSound.play(); // Play dracula sound effect
             // Show Hit Image when Mouse Click Successful.
             id.classList.add('hit')
             setTimeout(function(){
@@ -81,8 +91,10 @@ function countDown() {
         //Set score back to 0
         score=null
         if (result <= 44) {
+            loseGameSound.play(); // Play lose sound effect
             showGameOverModal()
         }else if(result >=45){
+            winGameSound.play(); // Play win sound effect 
             showNextPageModal();
         }
         return;
