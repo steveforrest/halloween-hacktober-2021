@@ -20,8 +20,14 @@
         });
       })
     </script>
+    <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+      }
+  </script>
 
-<script>
+  <script>
       $(document).ready(function () {
         var audio = $("#continue")[0];
         $("#continue_sound").mouseenter(function () {
@@ -44,7 +50,7 @@
         <!-- links -->
         <ul class="links">
           <li>
-            <a href="index.html">HomeSafe</a>
+            <a href="index.html">Run Home</a>
           </li>
         </ul>
       </div>
@@ -61,6 +67,7 @@
     <section class="candy-section-center">
       <audio id="audio" src="audio_files/Candy.mp3"></audio>
   <audio id="audio" src="audio_files/Candy.ogg"></audio>
+
       <h2 class="warning">The Game of Greed</h2>
       <article class="candy-col">
         <div class="candygame">
