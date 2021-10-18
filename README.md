@@ -69,7 +69,7 @@ This site is created based on the following user’s expectations in mind.
 	 * Have a clear information on what the site is about and what it provides
 	 * Have an easy navigation that is consistent throughout the website
 	 * Consistent layout without any confusing elements
-     * Have clear feedback for my action taken within the site
+   * Have clear feedback for my action taken within the site
 
 2. _Scope Plane_
 
@@ -77,28 +77,76 @@ This site is created based on the following user’s expectations in mind.
 
 * The site should be responsive and user-friendly on all browsers and devices.
 * Intuitive and user-friendly site
-* intuitive and user-friendly layout.
+* Intuitive and user-friendly layout.
 * The purpose of the site should be clear immediately.
 * Responsive on all device sizes.
 * Interactive elements.
 
 3. _Structure Plane_
 
-**User Story:**
+> **User Story:**
 
 * As a first time visitor to the site I would like to immediately understand it's purpose.
 
 **Acceptance Criteria:**
 
-* The home page has a heading that discribes the purpose of the site and who it is for.
+* The home page has a text-block that discribes the purpose of the site and who it is for.
 
 **Implementation:**
 
-The home page will display a heading that clearly shows the site purpose.
+* The home page will display a text-block that clearly shows the site purpose.
 
 **Result:** 
 
 User Story accomplished.
+
+> **User Story:**
+
+* As a user I want easy navigation elements that are consistent throughout the website.
+
+**Acceptance Criteria:**
+
+* All the pages have a navbar and continue buttons to guide users round the site
+
+**Implementation:**
+
+* All the pages display a nav bar and continue buttons.
+
+**Result:** 
+
+* User Story accomplished.
+
+> **User Story:**
+
+* As a user I want a consistent layout without any confusing elements.
+
+**Acceptance Criteria:**
+
+* All the pages have a matching colour scheme and layout, and all the pages have a repetative order.
+
+**Implementation:**
+
+* All the pages have a matching colour scheme and layout, and all the pages have a repetative order which starts with a story, moves to a game, then a house and back to a story.
+
+**Result:** 
+
+* User Story accomplished.
+
+> **User Story:**
+
+* As a user I want clear feedback for my action taken within the site.
+
+**Acceptance Criteria:**
+
+* Instructions and modals.
+
+**Implementation:**
+
+* The puzzle pages have instructions and modals that notify the users if thier actions have resulted in a win or lose and what action to take next.
+
+**Result:** 
+
+* User Story accomplished.
 
 4. _Skeleton Plane_
 
@@ -108,6 +156,7 @@ Users are transported though the story via modal links and continue buttons. The
 
 **Existing Features:**
 
+* Index page
 * Story pages 
 * Game pages 
 * House pages 
@@ -132,11 +181,43 @@ The target audience will be children and adults of all ages who enjoy interactiv
 
 ### Features Visiable across All Pages
 
+* Navbar - With button to take user back to home page.
 
+* Continue Buttons - Buttons that take the user from page to page within the site.
 
-### Features visable on <> page
+### Features visable on home page
 
+* Pumpkin Head - This button moves the user onto the first story page. It has animation and sound effects.
 
+* Play/ Pause Button - This stops the video background playing.
+
+* Text - This is an introduction to the site and sets the tone of the games and story. It hints at what the users can expect from the site.
+
+* Background - The video background builds the users excitement and can be paused using the pause button.
+
+### Features visable on story pages
+
+* Text - These story pages walk the user through the tale, linking the puzzle and house pages to give context to the ideas.
+
+* Continue Button - The continue button allows the user to move to the next page once they have finished reading.
+
+### Features visable on puzzle pages
+
+* Instructions - This tells the user how to play the game, and what they need to do to win. Alerts are used to notify the user on whether they've won or lost with buttons to direct thier next move.
+
+* Puzzle - The puzzles need to be completed before moving onto the next page. A modal and/or text-box notifies the user if they need to retry or if they've won and can continue.
+
+* Modals - These pop up on some of the games with retry buttons or continue buttons depending on whether the users passed the game.
+
+* Continue Button - This moves the user onto the next page.
+
+* Retry Button - This refreshes the game so the user can try again.
+
+### Features visable on house pages
+
+* Text - This tells the user how much candy they've recieved from the house they're trick or treating at.
+
+* Continue Button - This takes the user to the next page.
 
 ### Future Features
 
@@ -147,6 +228,16 @@ The target audience will be children and adults of all ages who enjoy interactiv
 * _Score Keeping_ - Add the ability to keep a score of the amount of candy you get based on how well you do in the games.
 
 * _Animation_ - Animation to highlight when users lose a game.
+
+### Bugs and Fixes Implemented after Testing 
+
+* _Browser Issues_ - Firefox causes the modals in the games to mis-behave; Unfortunatly we didn't have time to implement a fix.
+
+* _Responsiveness_ - The site doesn't work well on smaller screen sizes; Unfortunatly we didn't have time to implement a fix.
+
+* _Sound Effects_ - Some of the sound effects across the site don't play like they should; Unfortunatly we didn't have time to implement a fix.
+
+* _onclick_ - Add an onclick to the vampire so it disappears when it's clicked within the game; Unfortunatly we didn't have time to implement a fix.
 
 ## Technologies Used
 
