@@ -8,8 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>Gory Stories</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
   </script>
+  <script>
+      $(document).ready(function () {
+        var audio = $("#abandon")[0];
+        $("#abandon_sound").mouseenter(function () {
+          audio.play();
+        });
+      })
+    </script>
 
   <script>
     $(document).ready(function () {
@@ -57,6 +66,7 @@
 
     })
   </script>
+
 </head>
 
 <body class="game1-body">
@@ -122,6 +132,22 @@
   <section id="zsvwg-scores">
     <p>Player: <span id="score"> 0</span></p>
     <p>Computer: <span id="loss"> 0</span></p>
+  </section>
+
+  <section>
+    <p>
+      Game rules:
+      baseball bat zombie and skeleton
+      silver bullet werewolf and zombie
+      wooden stake werewolf and vampire
+      holy water ghost and vampire
+      proton pack ghost and skeleton
+    </p>
+    <div class ="z-game-exit">
+     <a class="exit" href="tot-house3.html" id="abandon_sound"
+          >abandon game <i class="fas fa-door-open"></i
+        ></a>
+      </div>
   </section>
 
 
@@ -225,6 +251,14 @@
     Your browser isn't invited for super fun audio time.
   </audio>
 
+ <audio id="abandon">
+      <!-- <source src="bg.mp3"></source> -->
+      <source src="audio_files/Run_voice_lose_WAM_game.mp3" muted="muted">
+      </source>
+      <source src="audio_files/Run_voice_lose_WAM_game.ogg" muted="muted">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
 
   <script src="js/zswvg.js"></script>
 </body>

@@ -21,6 +21,14 @@
         });
       })
     </script>
+    <script>
+      $(document).ready(function () {
+        var audio = $("#abandon")[0];
+        $("#abandon_sound").mouseenter(function () {
+          audio.play();
+        });
+      })
+    </script>
   </head>
 
   <body class="game2-body">
@@ -41,17 +49,20 @@
       </div>
     </nav>
 
-    <section class="section-center">
+    <section class="whack-section-center">
       <div class="whack-a-vamp-container">
         <div class="row">
             <div class="col text">
-                <h1 class="title">Whack-A-Vampire</h1>
-
-                <h2 class="score-text">Score:</h2>
-                <h3 class="score" id="score">0</h3>
+                <h1 class="whack-title">Whack-A-Vampire</h1>
+                <p class="whack-text">Get 45 points to survive </p>
+                <h2 class="whack-score-text">Score:</h2>
+                <h3 class="whack-score" id="score">0</h3>
 
                 <h2 class="time-left-text">Time Left:</h2>
                 <h3 class="time-left" id="time-left">60</h3>
+                 <a class="exit" href="tot-house2.html" id="abandon_sound"
+          >abandon game <i class="fas fa-door-open"></i
+        ></a>
             </div>
         </div>
         <div class="row">
@@ -67,7 +78,9 @@
                     <div class="whack-a-vamp-square" id="8"></div>
                     <div class="whack-a-vamp-square" id="9"></div>
                 </div> 
+                
             </div>
+            
         </div>
     </div>  
     </section>
@@ -91,7 +104,14 @@
         </div>
       </div>
     </section>
-
+<audio id="abandon">
+      <!-- <source src="bg.mp3"></source> -->
+      <source src="audio_files/Run_voice_lose_WAM_game.mp3" muted="muted">
+      </source>
+      <source src="audio_files/Run_voice_lose_WAM_game.ogg" muted="muted">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
     <audio id="continue">
       <!-- <source src="bg.mp3"></source> -->
       <source src="audio_files/Continue.mp3" muted="muted">
