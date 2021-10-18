@@ -965,7 +965,7 @@ button > img:hover{
   border: rgba(128, 128, 128, 0.82) 4px solid;	
   border-radius: 10px;	
   height: fit-content;	
-  text-align:
+  text-align: center;
 }
 
 /*continue button*/
